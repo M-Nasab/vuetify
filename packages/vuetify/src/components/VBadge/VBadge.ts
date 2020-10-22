@@ -7,6 +7,7 @@ import VIcon from '../VIcon/VIcon'
 // Mixins
 import Colorable from '../../mixins/colorable'
 import Themeable from '../../mixins/themeable'
+import Directionable from '../../mixins/directionable'
 import Toggleable from '../../mixins/toggleable'
 import Transitionable from '../../mixins/transitionable'
 import { factory as PositionableFactory } from '../../mixins/positionable'
@@ -25,6 +26,7 @@ export default mixins(
   Colorable,
   PositionableFactory(['left', 'bottom']),
   Themeable,
+  Directionable,
   Toggleable,
   Transitionable,
 /* @vue/component */
@@ -70,6 +72,7 @@ export default mixins(
         'v-badge--overlap': this.overlap,
         'v-badge--tile': this.tile,
         ...this.themeClasses,
+        ...this.directionClasses,
       }
     },
     computedBottom (): string {
@@ -99,7 +102,7 @@ export default mixins(
       return this.calcPosition(this.offsetY)
     },
     isRtl (): boolean {
-      return this.$vuetify.rtl
+      return this.componentIsRTL
     },
     // Default fallback if offsetX
     // or offsetY are undefined.
