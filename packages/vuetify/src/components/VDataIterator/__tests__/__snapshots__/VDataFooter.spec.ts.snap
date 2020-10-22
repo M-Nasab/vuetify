@@ -4,7 +4,7 @@ exports[`VDataFooter.ts should disable last page button if no items 1`] = `
 <div class="v-data-footer">
   <div class="v-data-footer__select">
     Items per page:
-    <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+    <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
       <div class="v-input__control">
         <div role="button"
              aria-haspopup="listbox"
@@ -105,7 +105,7 @@ exports[`VDataFooter.ts should render first & last icons with showFirstLastPage 
 <div class="v-data-footer">
   <div class="v-data-footer__select">
     Items per page:
-    <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+    <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
       <div class="v-input__control">
         <div role="button"
              aria-haspopup="listbox"
@@ -202,7 +202,7 @@ exports[`VDataFooter.ts should render in RTL mode 1`] = `
 <div class="v-data-footer">
   <div class="v-data-footer__select">
     Items per page:
-    <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+    <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
       <div class="v-input__control">
         <div role="button"
              aria-haspopup="listbox"
@@ -299,7 +299,7 @@ exports[`VDataFooter.ts should render with custom itemsPerPage 1`] = `
 <div class="v-data-footer">
   <div class="v-data-footer__select">
     Items per page:
-    <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+    <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
       <div class="v-input__control">
         <div role="button"
              aria-haspopup="listbox"
@@ -375,7 +375,7 @@ exports[`VDataFooter.ts should show current page if has showCurrentPage 1`] = `
 <div class="v-data-footer">
   <div class="v-data-footer__select">
     Items per page:
-    <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+    <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
       <div class="v-input__control">
         <div role="button"
              aria-haspopup="listbox"
