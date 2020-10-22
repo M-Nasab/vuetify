@@ -3,13 +3,15 @@ import './VApp.sass'
 
 // Mixins
 import Themeable from '../../mixins/themeable'
+import Directionable from '../../mixins/directionable'
 
 // Utilities
 import mixins from '../../util/mixins'
 
 /* @vue/component */
 export default mixins(
-  Themeable
+  Themeable,
+  Directionable,
 ).extend({
   name: 'v-app',
 
@@ -26,11 +28,18 @@ export default mixins(
       type: Boolean,
       default: undefined,
     },
+    rtl: {
+      type: Boolean,
+      default: undefined,
+    },
   },
 
   computed: {
     isDark (): boolean {
       return this.$vuetify.theme.dark
+    },
+    componentIsRTL (): boolean {
+      return this.$vuetify.rtl
     },
   },
 
@@ -46,9 +55,10 @@ export default mixins(
     return h('div', {
       staticClass: 'v-application',
       class: {
-        'v-application--is-rtl': this.$vuetify.rtl,
-        'v-application--is-ltr': !this.$vuetify.rtl,
+        'v-application--is-rtl': this.componentIsRTL,
+        'v-application--is-ltr': !this.componentIsRTL,
         ...this.themeClasses,
+        ...this.directionClasses,
       },
       attrs: { 'data-app': true },
       domProps: { id: this.id },
