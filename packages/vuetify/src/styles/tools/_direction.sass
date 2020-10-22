@@ -1,0 +1,6 @@
+@mixin direction($component)
+  .v-application--is-rtl, .v-application--is-ltr
+    .direction--rtl.#{$component}
+      @content(rtl)
+    .direction--ltr.#{$component}
+      @content(ltr)
