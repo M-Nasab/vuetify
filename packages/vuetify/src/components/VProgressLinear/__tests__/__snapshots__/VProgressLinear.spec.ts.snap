@@ -5,7 +5,7 @@ exports[`VProgressLinear.ts should render component and match snapshot 1`] = `
      aria-valuemin="0"
      aria-valuemax="100"
      aria-valuenow="33"
-     class="v-progress-linear theme--light"
+     class="v-progress-linear theme--light direction--ltr"
      style="height: 4px;"
 >
   <div class="v-progress-linear__background primary"
@@ -26,11 +26,11 @@ exports[`VProgressLinear.ts should render component in RTL mode 1`] = `
      aria-valuemin="0"
      aria-valuemax="100"
      aria-valuenow="33"
-     class="v-progress-linear v-progress-linear--reverse theme--light"
+     class="v-progress-linear theme--light direction--ltr"
      style="height: 4px;"
 >
   <div class="v-progress-linear__background primary"
-       style="opacity: 0.3; right: 33%; width: 67%;"
+       style="opacity: 0.3; left: 33%; width: 67%;"
   >
   </div>
   <div class="v-progress-linear__buffer">
@@ -47,7 +47,7 @@ exports[`VProgressLinear.ts should render component with buffer value and match 
      aria-valuemin="0"
      aria-valuemax="80"
      aria-valuenow="33"
-     class="v-progress-linear theme--light"
+     class="v-progress-linear theme--light direction--ltr"
      style="height: 4px;"
 >
   <div class="v-progress-linear__background primary"
@@ -70,7 +70,7 @@ exports[`VProgressLinear.ts should render component with buffer value and match 
      aria-valuemin="0"
      aria-valuemax="0"
      aria-valuenow="33"
-     class="v-progress-linear theme--light"
+     class="v-progress-linear theme--light direction--ltr"
      style="height: 4px;"
 >
   <div class="v-progress-linear__background primary"
@@ -93,7 +93,7 @@ exports[`VProgressLinear.ts should render component with buffer value and value 
      aria-valuemin="0"
      aria-valuemax="80"
      aria-valuenow="90"
-     class="v-progress-linear theme--light"
+     class="v-progress-linear theme--light direction--ltr"
      style="height: 4px;"
 >
   <div class="v-progress-linear__background primary"
@@ -116,7 +116,7 @@ exports[`VProgressLinear.ts should render component with color and background co
      aria-valuemin="0"
      aria-valuemax="100"
      aria-valuenow="33"
-     class="v-progress-linear theme--light"
+     class="v-progress-linear theme--light direction--ltr"
      style="height: 4px;"
 >
   <div class="v-progress-linear__background blue"
@@ -137,7 +137,7 @@ exports[`VProgressLinear.ts should render component with color and background co
      aria-valuemin="0"
      aria-valuemax="100"
      aria-valuenow="33"
-     class="v-progress-linear theme--light"
+     class="v-progress-linear theme--light direction--ltr"
      style="height: 4px;"
 >
   <div class="v-progress-linear__background blue"
@@ -158,7 +158,7 @@ exports[`VProgressLinear.ts should render component with color and background op
      aria-valuemin="0"
      aria-valuemax="100"
      aria-valuenow="33"
-     class="v-progress-linear theme--light"
+     class="v-progress-linear theme--light direction--ltr"
      style="height: 4px;"
 >
   <div class="v-progress-linear__background orange"
@@ -179,7 +179,7 @@ exports[`VProgressLinear.ts should render component with color and match snapsho
      aria-valuemin="0"
      aria-valuemax="100"
      aria-valuenow="33"
-     class="v-progress-linear theme--light"
+     class="v-progress-linear theme--light direction--ltr"
      style="height: 4px;"
 >
   <div class="v-progress-linear__background orange"
@@ -200,7 +200,7 @@ exports[`VProgressLinear.ts should render component with css color and match sna
      aria-valuemin="0"
      aria-valuemax="100"
      aria-valuenow="33"
-     class="v-progress-linear theme--light"
+     class="v-progress-linear theme--light direction--ltr"
      style="height: 4px;"
 >
   <div class="v-progress-linear__background"
@@ -221,7 +221,7 @@ exports[`VProgressLinear.ts should render default slot content 1`] = `
      aria-valuemin="0"
      aria-valuemax="80"
      aria-valuenow="90"
-     class="v-progress-linear theme--light"
+     class="v-progress-linear theme--light direction--ltr"
      style="height: 4px;"
 >
   <div class="v-progress-linear__background primary"
@@ -249,7 +249,7 @@ exports[`VProgressLinear.ts should render inactive component and match snapshot 
      aria-valuemin="0"
      aria-valuemax="100"
      aria-valuenow="33"
-     class="v-progress-linear theme--light"
+     class="v-progress-linear theme--light direction--ltr"
      style="height: 0px;"
 >
   <div class="v-progress-linear__background primary"
@@ -271,7 +271,7 @@ exports[`VProgressLinear.ts should render indeterminate progress and match snaps
 <div role="progressbar"
      aria-valuemin="0"
      aria-valuemax="100"
-     class="v-progress-linear theme--light"
+     class="v-progress-linear theme--light direction--ltr"
      style="height: 4px;"
 >
   <div class="v-progress-linear__background primary"
@@ -293,7 +293,7 @@ exports[`VProgressLinear.ts should render indeterminate progress with query prop
 <div role="progressbar"
      aria-valuemin="0"
      aria-valuemax="100"
-     class="v-progress-linear v-progress-linear--query theme--light"
+     class="v-progress-linear v-progress-linear--query theme--light direction--ltr"
      style="height: 4px;"
 >
   <div class="v-progress-linear__background primary"
@@ -316,11 +316,11 @@ exports[`VProgressLinear.ts should render reverse component in RTL mode 1`] = `
      aria-valuemin="0"
      aria-valuemax="100"
      aria-valuenow="33"
-     class="v-progress-linear theme--light"
+     class="v-progress-linear v-progress-linear--reverse theme--light direction--ltr"
      style="height: 4px;"
 >
   <div class="v-progress-linear__background primary"
-       style="opacity: 0.3; left: 33%; width: 67%;"
+       style="opacity: 0.3; right: 33%; width: 67%;"
   >
   </div>
   <div class="v-progress-linear__buffer">
@@ -337,7 +337,7 @@ exports[`VProgressLinear.ts should render reversed component 1`] = `
      aria-valuemin="0"
      aria-valuemax="100"
      aria-valuenow="33"
-     class="v-progress-linear v-progress-linear--reverse theme--light"
+     class="v-progress-linear v-progress-linear--reverse theme--light direction--ltr"
      style="height: 4px;"
 >
   <div class="v-progress-linear__background primary"
