@@ -85,7 +85,7 @@ describe('VStepperContent.ts', () => {
           rtl: true,
         },
       },
-      propsData: { step: 1 },
+      propsData: { step: 1, rtl: true },
       provide: {
         isVertical: false,
         stepper: {

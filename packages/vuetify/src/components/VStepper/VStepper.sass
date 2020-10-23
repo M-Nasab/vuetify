@@ -3,6 +3,11 @@
 +theme(v-stepper) using ($material)
   background: map-get($material, 'bg-color')
 
+  +direction using ($direction, $start, $end)
+    &--vertical
+      .v-stepper__content:not(:last-child)
+        border-#{$start}: 1px solid rgba(map-get($material, 'fg-color'), map-get($material, 'divider-percent'))
+
   .v-stepper__step
     &:not(.v-stepper__step--active):not(.v-stepper__step--complete):not(.v-stepper__step--error)
       .v-stepper__step__step
@@ -50,13 +55,19 @@
       .v-stepper__label
         color: rgba(map-get($material, 'fg-color'), map-get($material, 'secondary-text-percent'))
 
-  &--vertical
-    .v-stepper__content:not(:last-child)
-      +ltr()
-        border-left: 1px solid rgba(map-get($material, 'fg-color'), map-get($material, 'divider-percent'))
++direction(v-stepper) using ($direction, $start, $end)
+  .v-stepper__step__step
+    margin-#{$end}: $stepper-step-step-margin
 
-      +rtl()
-        border-right: 1px solid rgba(map-get($material, 'fg-color'), map-get($material, 'divider-percent'))
+  .v-stepper__label
+    text-align: #{$start}
+
+  &--vertical
+    .v-stepper__content
+      margin: if($direction == ltr, $stepper-vertical-content-ltr-margin, $stepper-vertical-content-rtl-margin)
+
+    .v-stepper__step__step
+      margin-#{$end}: $stepper-vertical-step-step-margin
 
 .v-stepper
   border-radius: $stepper-border-radius
@@ -90,12 +101,6 @@
     min-width: $stepper-step-step-min-width
     width: $stepper-step-step-width
     transition: .3s map-get($transition, 'fast-in-fast-out')
-
-    +ltr()
-      margin-right: $stepper-step-step-margin
-
-    +rtl()
-      margin-left: $stepper-step-step-margin
 
     .v-icon.v-icon
       font-size: $stepper-step-step-icon-font-size
@@ -141,12 +146,6 @@
     flex-direction: column
     line-height: $stepper-label-line-height
 
-    +ltr()
-      text-align: left
-
-    +rtl()
-      text-align: right
-
     small
       font-size: $stepper-label-small-font-size
       font-weight: $stepper-label-small-font-weight
@@ -180,21 +179,9 @@
     .v-stepper__content
       padding: $stepper-vertical-content-padding
       width: auto
-      +ltr()
-        margin: $stepper-vertical-content-ltr-margin
-
-      +rtl()
-        margin: $stepper-vertical-content-rtl-margin
 
     .v-stepper__step
       padding: $stepper-vertical-step-padding
-
-    .v-stepper__step__step
-      +ltr()
-        margin-right: $stepper-vertical-step-step-margin
-
-      +rtl()
-        margin-left: $stepper-vertical-step-step-margin
 
   &--alt-labels
     .v-stepper__header

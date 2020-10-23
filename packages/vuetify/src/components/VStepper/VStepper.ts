@@ -9,6 +9,7 @@ import VStepperContent from './VStepperContent'
 import { provide as RegistrableProvide } from '../../mixins/registrable'
 import Proxyable from '../../mixins/proxyable'
 import Themeable from '../../mixins/themeable'
+import Directionable from '../../mixins/directionable'
 
 // Utilities
 import mixins from '../../util/mixins'
@@ -20,7 +21,8 @@ import { VNode } from 'vue'
 const baseMixins = mixins(
   RegistrableProvide('stepper'),
   Proxyable,
-  Themeable
+  Themeable,
+  Directionable,
 )
 
 type VStepperStepInstance = InstanceType<typeof VStepperStep>
@@ -66,6 +68,7 @@ export default baseMixins.extend({
         'v-stepper--alt-labels': this.altLabels,
         'v-stepper--non-linear': this.nonLinear,
         ...this.themeClasses,
+        ...this.directionClasses,
       }
     },
   },
