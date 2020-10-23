@@ -1,5 +1,18 @@
-@mixin direction($component)
-  .direction--rtl.#{$component}
-    @content(rtl)
-  .direction--ltr.#{$component}
-    @content(ltr)
+@mixin direction($components)
+  @each $component in $components
+    .direction--rtl.#{$component}
+        $start: right
+        $end: left
+        $direction: rtl
+        
+        direction: $direction
+
+        @content($direction, $start, $end)
+    .direction--ltr.#{$component}
+        $start: left
+        $end: right
+        $direction: ltr
+        
+        direction: $direction
+
+        @content($direction, $start, $end)

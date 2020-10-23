@@ -54,12 +54,7 @@
         > .v-input__control > .v-input__slot fieldset
           color: map-deep-get($material, 'text-fields', 'outlined-disabled')
 
-+direction(v-text-field) using ($direction)
-  $start: if($direction == rtl, right, left)
-  $end: if($direction == ltr, left, right)
-
-  direction: $direction
-
++direction(v-text-field) using ($direction, $start, $end)
   .v-input__prepend-inner
       margin-#{$end}: auto
       padding-#{$start}: $text-field-append-prepend-margin
