@@ -31,6 +31,7 @@ import MobileRow from './MobileRow'
 
 // Mixins
 import Loadable from '../../mixins/loadable'
+import Directionable from '../../mixins/directionable'
 
 // Directives
 import ripple from '../../directives/ripple'
@@ -74,6 +75,7 @@ function searchTableItems (
 export default mixins(
   VDataIterator,
   Loadable,
+  Directionable,
 ).extend({
   name: 'v-data-table',
 
@@ -466,7 +468,7 @@ export default mixins(
           headers: this.computedHeaders,
           hideDefaultHeader: this.hideDefaultHeader,
           item,
-          rtl: this.$vuetify.rtl,
+          rtl: this.isRtl,
         },
         scopedSlots,
         on: {
