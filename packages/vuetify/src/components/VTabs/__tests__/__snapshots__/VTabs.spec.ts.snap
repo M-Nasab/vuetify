@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`VTabs.ts should render generic elements in the tab container 1`] = `
-<div class="v-tabs theme--light">
+<div class="v-tabs theme--light direction--ltr">
   <div role="tablist"
        class="v-item-group theme--light direction--ltr v-slide-group v-tabs-bar primary--text"
   >

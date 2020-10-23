@@ -10,6 +10,7 @@ import VTabsSlider from './VTabsSlider'
 import Colorable from '../../mixins/colorable'
 import Proxyable from '../../mixins/proxyable'
 import Themeable from '../../mixins/themeable'
+import Directionable from '../../mixins/directionable'
 
 // Directives
 import Resize from '../../directives/resize'
@@ -25,7 +26,8 @@ import { VNode } from 'vue/types'
 const baseMixins = mixins(
   Colorable,
   Proxyable,
-  Themeable
+  Themeable,
+  Directionable
 )
 
 interface options extends ExtractVue<typeof baseMixins> {
@@ -103,10 +105,11 @@ export default baseMixins.extend<options>().extend({
         'v-tabs--right': this.right,
         'v-tabs--vertical': this.vertical,
         ...this.themeClasses,
+        ...this.directionClasses,
       }
     },
     isReversed (): boolean {
-      return this.$vuetify.rtl && this.vertical
+      return this.isRtl && this.vertical
     },
     sliderStyles (): object {
       return {
@@ -134,9 +137,9 @@ export default baseMixins.extend<options>().extend({
     right: 'callSlider',
     showArrows: 'callSlider',
     vertical: 'callSlider',
+    isRtl: 'onResize',
     '$vuetify.application.left': 'onResize',
     '$vuetify.application.right': 'onResize',
-    '$vuetify.rtl': 'onResize',
   },
 
   mounted () {

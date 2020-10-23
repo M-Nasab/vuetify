@@ -17,6 +17,31 @@
 +theme(v-tabs-items) using ($material)
   background-color: map-get($material, 'cards')
 
+// Modifier
++direction(v-tabs--align-with-title) using ($direction, $start, $end)
+  & > .v-tabs-bar:not(.v-tabs-bar--show-arrows):not(.v-slide-group--is-overflowing) > .v-slide-group__wrapper > .v-tabs-bar__content
+    & > .v-tab:first-child,
+    & > .v-tabs-slider-wrapper + .v-tab
+      margin-#{$start}: $tabs-item-align-with-title-margin
+
++direction((v-tabs--fixed-tabs, v-tabs--centered)) using ($direction, $start, $end)
+  & > .v-tabs-bar
+    .v-tabs-bar__content > *:last-child
+      margin-#{$end}: auto
+
+    .v-tabs-bar__content > *:first-child:not(.v-tabs-slider-wrapper),
+    .v-tabs-slider-wrapper + *
+      margin-#{$start}: auto
+
++direction(v-tabs--right) using ($direction, $start, $end)
+  & > .v-tabs-bar
+    .v-tab:first-child,
+    .v-tabs-slider-wrapper + .v-tab
+      margin-#{$start}: auto
+
+    .v-tab:last-child
+      margin-#{$end}: 0
+
 .v-tabs-bar
   &.primary,
   &.secondary,
@@ -113,33 +138,6 @@
     transition: $primary-transition
     z-index: 1
 
-// Modifier
-.v-tabs--align-with-title > .v-tabs-bar:not(.v-tabs-bar--show-arrows):not(.v-slide-group--is-overflowing) > .v-slide-group__wrapper > .v-tabs-bar__content
-  & > .v-tab:first-child,
-  & > .v-tabs-slider-wrapper + .v-tab
-    +ltr()
-      margin-left: $tabs-item-align-with-title-margin
-
-    +rtl()
-      margin-right: $tabs-item-align-with-title-margin
-
-.v-tabs--fixed-tabs > .v-tabs-bar,
-.v-tabs--centered > .v-tabs-bar
-  .v-tabs-bar__content > *:last-child
-    +ltr()
-      margin-right: auto
-
-    +rtl()
-      margin-left: auto
-
-  .v-tabs-bar__content > *:first-child:not(.v-tabs-slider-wrapper),
-  .v-tabs-slider-wrapper + *
-    +ltr()
-      margin-left: auto
-
-    +rtl()
-      margin-right: auto
-
 .v-tabs--fixed-tabs > .v-tabs-bar
   .v-tab
     flex: 1 1 auto
@@ -162,22 +160,6 @@
 .v-tabs--overflow > .v-tabs-bar
   .v-tab
     flex: 1 0 auto
-
-.v-tabs--right > .v-tabs-bar
-  .v-tab:first-child,
-  .v-tabs-slider-wrapper + .v-tab
-    +ltr()
-      margin-left: auto
-
-    +rtl()
-      margin-right: auto
-
-  .v-tab:last-child
-    +ltr()
-      margin-right: 0
-
-    +rtl()
-      margin-left: 0
 
 .v-tabs--vertical
   display: flex
