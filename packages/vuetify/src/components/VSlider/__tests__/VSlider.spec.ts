@@ -223,14 +223,12 @@ describe('VSlider.ts', () => {
 
     expect(input).toHaveBeenCalledTimes(12)
 
-    wrapper.setProps({ disabled: false })
-    wrapper.vm.$vuetify.rtl = true
+    wrapper.setProps({ disabled: false, rtl: true })
 
     slider.trigger('keydown.right', {
       shiftKey: true,
     })
     expect(input).toHaveBeenCalledWith(72)
-    wrapper.vm.$vuetify.rtl = undefined
   })
 
   it('should add for to label', () => {
@@ -491,8 +489,7 @@ describe('VSlider.ts', () => {
 
     expect(wrapper.html()).toMatchSnapshot()
 
-    wrapper.vm.$vuetify.rtl = true
-    wrapper.setProps({ value: 0, disabled: false })
+    wrapper.setProps({ value: 0, disabled: false, rtl: true })
     await wrapper.vm.$nextTick()
 
     expect(wrapper.html()).toMatchSnapshot()

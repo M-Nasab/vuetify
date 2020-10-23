@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`VSwitch.ts should render element with loader and match the snapshot 1`] = `
-<div class="v-input v-input--is-loading theme--light v-input--selection-controls v-input--switch">
+<div class="v-input v-input--is-loading theme--light direction--ltr v-input--selection-controls v-input--switch">
   <div class="v-input__control">
     <div class="v-input__slot">
       <div class="v-input--selection-controls__input">

@@ -73,7 +73,7 @@ export default VSlider.extend({
 
   methods: {
     getTrackStyle (startLength: number, endLength: number, startPadding = 0, endPadding = 0) {
-      const startDir = this.vertical ? this.$vuetify.rtl ? 'top' : 'bottom' : this.$vuetify.rtl ? 'right' : 'left'
+      const startDir = this.vertical ? this.isRtl ? 'top' : 'bottom' : this.isRtl ? 'right' : 'left'
       const endDir = this.vertical ? 'height' : 'width'
 
       const start = `calc(${startLength}% + ${startPadding}px)`
@@ -123,7 +123,7 @@ export default VSlider.extend({
         },
       ]
 
-      if (this.$vuetify.rtl) sections.reverse()
+      if (this.isRtl) sections.reverse()
 
       children.push(...sections.map(section => this.$createElement('div', this.setBackgroundColor(section.color, {
         staticClass: section.class,
