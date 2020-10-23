@@ -1,17 +1,11 @@
 @mixin direction($components)
-  @each $component in $components
-    .direction--rtl.#{$component}
-        $start: right
-        $end: left
-        $direction: rtl
-        
-        direction: $direction
+  $directions: (rtl, ltr)
 
-        @content($direction, $start, $end)
-    .direction--ltr.#{$component}
-        $start: left
-        $end: right
-        $direction: ltr
+  @each $component in $components
+    @each $direction in $directions
+      .direction--#{$direction}.#{$component}
+        $start: if($direction == rtl, right, left)
+        $end: if($direction == rtl, left, right)
         
         direction: $direction
 
