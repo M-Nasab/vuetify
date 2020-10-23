@@ -1,6 +1,7 @@
 // Mixins
 import Colorable from '../colorable'
 import Themeable from '../themeable'
+import Directionable from '../directionable'
 import { inject as RegistrableInject } from '../registrable'
 
 // Utilities
@@ -16,6 +17,7 @@ const baseMixins = mixins(
   Colorable,
   RegistrableInject<'form', any>('form'),
   Themeable,
+  Directionable,
 )
 
 /* @vue/component */

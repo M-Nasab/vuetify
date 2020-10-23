@@ -17,16 +17,16 @@ exports[`VColorPicker.ts should change canvas height 1`] = `
     </div>
   </div>
   <div class="v-color-picker__controls">
-    <div class="v-color-picker__preview">
+    <div class="v-color-picker__preview direction--ltr">
       <div class="v-color-picker__dot">
         <div style="background: rgb(255, 0, 0);">
         </div>
       </div>
       <div class="v-color-picker__sliders">
-        <div class="v-input v-color-picker__hue v-input--hide-details theme--light v-input__slider v-color-picker__track">
+        <div class="v-input v-color-picker__hue v-input--hide-details theme--light direction--ltr v-input__slider v-color-picker__track">
           <div class="v-input__control">
             <div class="v-input__slot">
-              <div class="v-slider v-slider--horizontal theme--light">
+              <div class="v-slider v-slider--horizontal theme--light direction--ltr">
                 <input value="0"
                        id="input-15"
                        readonly="readonly"
@@ -59,10 +59,10 @@ exports[`VColorPicker.ts should change canvas height 1`] = `
             </div>
           </div>
         </div>
-        <div class="v-input v-color-picker__alpha v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-input__slider v-color-picker__track">
+        <div class="v-input v-color-picker__alpha v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-input__slider v-color-picker__track">
           <div class="v-input__control">
             <div class="v-input__slot">
-              <div class="v-slider v-slider--horizontal theme--light">
+              <div class="v-slider v-slider--horizontal theme--light direction--ltr">
                 <input value="1"
                        id="input-16"
                        readonly="readonly"
@@ -159,16 +159,16 @@ exports[`VColorPicker.ts should hide canvas 1`] = `
      style="max-width: 300px;"
 >
   <div class="v-color-picker__controls">
-    <div class="v-color-picker__preview">
+    <div class="v-color-picker__preview direction--ltr">
       <div class="v-color-picker__dot">
         <div style="background: rgb(255, 0, 0);">
         </div>
       </div>
       <div class="v-color-picker__sliders">
-        <div class="v-input v-color-picker__hue v-input--hide-details theme--light v-input__slider v-color-picker__track">
+        <div class="v-input v-color-picker__hue v-input--hide-details theme--light direction--ltr v-input__slider v-color-picker__track">
           <div class="v-input__control">
             <div class="v-input__slot">
-              <div class="v-slider v-slider--horizontal theme--light">
+              <div class="v-slider v-slider--horizontal theme--light direction--ltr">
                 <input value="0"
                        id="input-35"
                        readonly="readonly"
@@ -201,10 +201,10 @@ exports[`VColorPicker.ts should hide canvas 1`] = `
             </div>
           </div>
         </div>
-        <div class="v-input v-color-picker__alpha v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-input__slider v-color-picker__track">
+        <div class="v-input v-color-picker__alpha v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-input__slider v-color-picker__track">
           <div class="v-input__control">
             <div class="v-input__slot">
-              <div class="v-slider v-slider--horizontal theme--light">
+              <div class="v-slider v-slider--horizontal theme--light direction--ltr">
                 <input value="1"
                        id="input-36"
                        readonly="readonly"
@@ -313,16 +313,16 @@ exports[`VColorPicker.ts should hide inputs 1`] = `
     </div>
   </div>
   <div class="v-color-picker__controls">
-    <div class="v-color-picker__preview">
+    <div class="v-color-picker__preview direction--ltr">
       <div class="v-color-picker__dot">
         <div style="background: rgb(255, 0, 0);">
         </div>
       </div>
       <div class="v-color-picker__sliders">
-        <div class="v-input v-color-picker__hue v-input--hide-details theme--light v-input__slider v-color-picker__track">
+        <div class="v-input v-color-picker__hue v-input--hide-details theme--light direction--ltr v-input__slider v-color-picker__track">
           <div class="v-input__control">
             <div class="v-input__slot">
-              <div class="v-slider v-slider--horizontal theme--light">
+              <div class="v-slider v-slider--horizontal theme--light direction--ltr">
                 <input value="0"
                        id="input-45"
                        readonly="readonly"
@@ -355,10 +355,10 @@ exports[`VColorPicker.ts should hide inputs 1`] = `
             </div>
           </div>
         </div>
-        <div class="v-input v-color-picker__alpha v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-input__slider v-color-picker__track">
+        <div class="v-input v-color-picker__alpha v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-input__slider v-color-picker__track">
           <div class="v-input__control">
             <div class="v-input__slot">
-              <div class="v-slider v-slider--horizontal theme--light">
+              <div class="v-slider v-slider--horizontal theme--light direction--ltr">
                 <input value="1"
                        id="input-46"
                        readonly="readonly"
@@ -414,16 +414,16 @@ exports[`VColorPicker.ts should not show alpha controls if given hex value witho
     </div>
   </div>
   <div class="v-color-picker__controls">
-    <div class="v-color-picker__preview v-color-picker__preview--hide-alpha">
+    <div class="v-color-picker__preview v-color-picker__preview--hide-alpha direction--ltr">
       <div class="v-color-picker__dot">
         <div style="background: rgb(0, 255, 0);">
         </div>
       </div>
       <div class="v-color-picker__sliders">
-        <div class="v-input v-color-picker__hue v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-input__slider v-color-picker__track">
+        <div class="v-input v-color-picker__hue v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-input__slider v-color-picker__track">
           <div class="v-input__control">
             <div class="v-input__slot">
-              <div class="v-slider v-slider--horizontal theme--light">
+              <div class="v-slider v-slider--horizontal theme--light direction--ltr">
                 <input value="120"
                        id="input-70"
                        readonly="readonly"
@@ -522,16 +522,16 @@ exports[`VColorPicker.ts should render color picker 1`] = `
     </div>
   </div>
   <div class="v-color-picker__controls">
-    <div class="v-color-picker__preview">
+    <div class="v-color-picker__preview direction--ltr">
       <div class="v-color-picker__dot">
         <div style="background: rgb(255, 0, 0);">
         </div>
       </div>
       <div class="v-color-picker__sliders">
-        <div class="v-input v-color-picker__hue v-input--hide-details theme--light v-input__slider v-color-picker__track">
+        <div class="v-input v-color-picker__hue v-input--hide-details theme--light direction--ltr v-input__slider v-color-picker__track">
           <div class="v-input__control">
             <div class="v-input__slot">
-              <div class="v-slider v-slider--horizontal theme--light">
+              <div class="v-slider v-slider--horizontal theme--light direction--ltr">
                 <input value="0"
                        id="input-5"
                        readonly="readonly"
@@ -564,10 +564,10 @@ exports[`VColorPicker.ts should render color picker 1`] = `
             </div>
           </div>
         </div>
-        <div class="v-input v-color-picker__alpha v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-input__slider v-color-picker__track">
+        <div class="v-input v-color-picker__alpha v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-input__slider v-color-picker__track">
           <div class="v-input__control">
             <div class="v-input__slot">
-              <div class="v-slider v-slider--horizontal theme--light">
+              <div class="v-slider v-slider--horizontal theme--light direction--ltr">
                 <input value="1"
                        id="input-6"
                        readonly="readonly"
@@ -676,16 +676,16 @@ exports[`VColorPicker.ts should render flat picker 1`] = `
     </div>
   </div>
   <div class="v-color-picker__controls">
-    <div class="v-color-picker__preview">
+    <div class="v-color-picker__preview direction--ltr">
       <div class="v-color-picker__dot">
         <div style="background: rgb(255, 0, 0);">
         </div>
       </div>
       <div class="v-color-picker__sliders">
-        <div class="v-input v-color-picker__hue v-input--hide-details theme--light v-input__slider v-color-picker__track">
+        <div class="v-input v-color-picker__hue v-input--hide-details theme--light direction--ltr v-input__slider v-color-picker__track">
           <div class="v-input__control">
             <div class="v-input__slot">
-              <div class="v-slider v-slider--horizontal theme--light">
+              <div class="v-slider v-slider--horizontal theme--light direction--ltr">
                 <input value="0"
                        id="input-89"
                        readonly="readonly"
@@ -718,10 +718,10 @@ exports[`VColorPicker.ts should render flat picker 1`] = `
             </div>
           </div>
         </div>
-        <div class="v-input v-color-picker__alpha v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-input__slider v-color-picker__track">
+        <div class="v-input v-color-picker__alpha v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-input__slider v-color-picker__track">
           <div class="v-input__control">
             <div class="v-input__slot">
-              <div class="v-slider v-slider--horizontal theme--light">
+              <div class="v-slider v-slider--horizontal theme--light direction--ltr">
                 <input value="1"
                        id="input-90"
                        readonly="readonly"
@@ -830,16 +830,16 @@ exports[`VColorPicker.ts should render picker with elevation 1`] = `
     </div>
   </div>
   <div class="v-color-picker__controls">
-    <div class="v-color-picker__preview">
+    <div class="v-color-picker__preview direction--ltr">
       <div class="v-color-picker__dot">
         <div style="background: rgb(255, 0, 0);">
         </div>
       </div>
       <div class="v-color-picker__sliders">
-        <div class="v-input v-color-picker__hue v-input--hide-details theme--light v-input__slider v-color-picker__track">
+        <div class="v-input v-color-picker__hue v-input--hide-details theme--light direction--ltr v-input__slider v-color-picker__track">
           <div class="v-input__control">
             <div class="v-input__slot">
-              <div class="v-slider v-slider--horizontal theme--light">
+              <div class="v-slider v-slider--horizontal theme--light direction--ltr">
                 <input value="0"
                        id="input-99"
                        readonly="readonly"
@@ -872,10 +872,10 @@ exports[`VColorPicker.ts should render picker with elevation 1`] = `
             </div>
           </div>
         </div>
-        <div class="v-input v-color-picker__alpha v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-input__slider v-color-picker__track">
+        <div class="v-input v-color-picker__alpha v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-input__slider v-color-picker__track">
           <div class="v-input__control">
             <div class="v-input__slot">
-              <div class="v-slider v-slider--horizontal theme--light">
+              <div class="v-slider v-slider--horizontal theme--light direction--ltr">
                 <input value="1"
                        id="input-100"
                        readonly="readonly"
@@ -984,16 +984,16 @@ exports[`VColorPicker.ts should show swatches 1`] = `
     </div>
   </div>
   <div class="v-color-picker__controls">
-    <div class="v-color-picker__preview">
+    <div class="v-color-picker__preview direction--ltr">
       <div class="v-color-picker__dot">
         <div style="background: rgb(255, 0, 0);">
         </div>
       </div>
       <div class="v-color-picker__sliders">
-        <div class="v-input v-color-picker__hue v-input--hide-details theme--light v-input__slider v-color-picker__track">
+        <div class="v-input v-color-picker__hue v-input--hide-details theme--light direction--ltr v-input__slider v-color-picker__track">
           <div class="v-input__control">
             <div class="v-input__slot">
-              <div class="v-slider v-slider--horizontal theme--light">
+              <div class="v-slider v-slider--horizontal theme--light direction--ltr">
                 <input value="0"
                        id="input-25"
                        readonly="readonly"
@@ -1026,10 +1026,10 @@ exports[`VColorPicker.ts should show swatches 1`] = `
             </div>
           </div>
         </div>
-        <div class="v-input v-color-picker__alpha v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-input__slider v-color-picker__track">
+        <div class="v-input v-color-picker__alpha v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-input__slider v-color-picker__track">
           <div class="v-input__control">
             <div class="v-input__slot">
-              <div class="v-slider v-slider--horizontal theme--light">
+              <div class="v-slider v-slider--horizontal theme--light direction--ltr">
                 <input value="1"
                        id="input-26"
                        readonly="readonly"
@@ -1956,16 +1956,16 @@ exports[`VColorPicker.ts should work correctly when initial value is null 1`] = 
     </div>
   </div>
   <div class="v-color-picker__controls">
-    <div class="v-color-picker__preview">
+    <div class="v-color-picker__preview direction--ltr">
       <div class="v-color-picker__dot">
         <div style="background: rgb(255, 0, 0);">
         </div>
       </div>
       <div class="v-color-picker__sliders">
-        <div class="v-input v-color-picker__hue v-input--hide-details theme--light v-input__slider v-color-picker__track">
+        <div class="v-input v-color-picker__hue v-input--hide-details theme--light direction--ltr v-input__slider v-color-picker__track">
           <div class="v-input__control">
             <div class="v-input__slot">
-              <div class="v-slider v-slider--horizontal theme--light">
+              <div class="v-slider v-slider--horizontal theme--light direction--ltr">
                 <input value="0"
                        id="input-79"
                        readonly="readonly"
@@ -1998,10 +1998,10 @@ exports[`VColorPicker.ts should work correctly when initial value is null 1`] = 
             </div>
           </div>
         </div>
-        <div class="v-input v-color-picker__alpha v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-input__slider v-color-picker__track">
+        <div class="v-input v-color-picker__alpha v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-input__slider v-color-picker__track">
           <div class="v-input__control">
             <div class="v-input__slot">
-              <div class="v-slider v-slider--horizontal theme--light">
+              <div class="v-slider v-slider--horizontal theme--light direction--ltr">
                 <input value="1"
                        id="input-80"
                        readonly="readonly"

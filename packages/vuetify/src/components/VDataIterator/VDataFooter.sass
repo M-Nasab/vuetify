@@ -1,5 +1,33 @@
 @import './_variables.scss'
 
++direction using ($direction, $start, $end)
+  .v-data-footer__icons-before
+    .v-btn:last-child
+      margin-#{$end}: $data-footer-icons-before-btn-margin-end
+
+  .v-data-footer__icons-after
+    .v-btn:first-child
+      margin-#{$start}: $data-footer-icons-after-btn-margin-start
+
+  .v-data-footer__pagination
+    @if $direction == ltr
+      margin: 0 $data-footer-pagination-margin-end 0 $data-footer-pagination-margin-start
+    @else
+      margin: 0 $data-footer-pagination-margin-start 0 $data-footer-pagination-margin-end
+
+  .v-data-footer__select
+    @if $direction == ltr
+      margin-right: $data-footer-select-margin-end
+    @else
+      margin-left: $data-footer-select-margin-end
+
+    .v-select
+      @if $direction == ltr
+        margin: $data-footer-select-select-margin-y 0 $data-footer-select-select-margin-y $data-footer-select-select-margin-start
+      @else
+        margin: $data-footer-select-select-margin-y $data-footer-select-select-margin-start $data-footer-select-select-margin-y 0
+    
+
 // Block
 .v-data-footer
   display: flex
@@ -12,32 +40,9 @@
   .v-btn
     color: inherit
 
-// Elements
-.v-data-footer__icons-before
-  .v-btn:last-child
-    +ltr()
-      margin-right: $data-footer-icons-before-btn-margin-end
-
-    +rtl()
-      margin-left: $data-footer-icons-before-btn-margin-end
-
-.v-data-footer__icons-after
-  .v-btn:first-child
-    +ltr()
-      margin-left: $data-footer-icons-after-btn-margin-start
-
-    +rtl()
-      margin-right: $data-footer-icons-after-btn-margin-start
-
 .v-data-footer__pagination
   display: block
   text-align: center
-
-  +ltr()
-    margin: 0 $data-footer-pagination-margin-end 0 $data-footer-pagination-margin-start
-
-  +rtl()
-    margin: 0 $data-footer-pagination-margin-start 0 $data-footer-pagination-margin-end
 
 .v-data-footer__select
   display: flex
@@ -46,22 +51,10 @@
   justify-content: flex-end
   white-space: nowrap
 
-  +ltr()
-    margin-right: $data-footer-select-margin-end
-
-  +rtl()
-    margin-left: $data-footer-select-margin-end
-
   .v-select
     flex: 0 1 0
     padding: 0
     position: initial
-
-    +ltr()
-      margin: $data-footer-select-select-margin-y 0 $data-footer-select-select-margin-y $data-footer-select-select-margin-start
-
-    +rtl()
-      margin: $data-footer-select-select-margin-y $data-footer-select-select-margin-start $data-footer-select-select-margin-y 0
 
   .v-select__selections
     flex-wrap: nowrap

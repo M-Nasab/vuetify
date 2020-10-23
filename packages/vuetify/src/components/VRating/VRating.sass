@@ -1,5 +1,10 @@
 @import './_variables.scss'
 
++direction(v-rating) using ($direction, $start, $end)
+  .v-icon
+    &::after
+      transform: if($direction == ltr, scaleX(1), scaleX(-1))
+
 .v-rating
   max-width: 100%
   white-space: nowrap
@@ -12,12 +17,6 @@
 
     &::after
       display: none
-
-    +ltr()
-      transform: scaleX(1)
-
-    +rtl()
-      transform: scaleX(-1)
 
   &--readonly
     .v-icon

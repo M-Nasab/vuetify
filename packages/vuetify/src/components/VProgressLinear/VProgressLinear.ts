@@ -11,6 +11,7 @@ import Colorable from '../../mixins/colorable'
 import { factory as PositionableFactory } from '../../mixins/positionable'
 import Proxyable from '../../mixins/proxyable'
 import Themeable from '../../mixins/themeable'
+import Directionable from '../../mixins/directionable'
 
 // Utilities
 import { convertToUnit, getSlot } from '../../util/helpers'
@@ -24,7 +25,8 @@ const baseMixins = mixins(
   Colorable,
   PositionableFactory(['absolute', 'fixed', 'top', 'bottom']),
   Proxyable,
-  Themeable
+  Themeable,
+  Directionable,
 )
 
 /* @vue/component */
@@ -143,13 +145,14 @@ export default baseMixins.extend({
         'v-progress-linear--rounded': this.rounded,
         'v-progress-linear--striped': this.striped,
         ...this.themeClasses,
+        ...this.directionClasses,
       }
     },
     computedTransition (): FunctionalComponentOptions {
       return this.indeterminate ? VFadeTransition : VSlideXTransition
     },
     isReversed (): boolean {
-      return this.$vuetify.rtl !== this.reverse
+      return this.isRtl !== this.reverse
     },
     normalizedBuffer (): number {
       return this.normalize(this.bufferValue)

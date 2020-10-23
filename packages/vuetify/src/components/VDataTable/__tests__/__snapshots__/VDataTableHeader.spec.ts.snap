@@ -516,7 +516,7 @@ exports[`VDataTableHeader.ts mobile should render 1`] = `
   <tr>
     <th>
       <div class="v-data-table-header-mobile__wrapper">
-        <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+        <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
           <div class="v-input__control">
             <div role="button"
                  aria-haspopup="listbox"
@@ -577,7 +577,7 @@ exports[`VDataTableHeader.ts mobile should render with data-table-select header 
             </i>
           </div>
         </div>
-        <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+        <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
           <div class="v-input__control">
             <div role="button"
                  aria-haspopup="listbox"
@@ -627,7 +627,7 @@ exports[`VDataTableHeader.ts mobile should work with multiSort 1`] = `
   <tr>
     <th>
       <div class="v-data-table-header-mobile__wrapper">
-        <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select v-select--is-multi">
+        <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select v-select--is-multi">
           <div class="v-input__control">
             <div role="button"
                  aria-haspopup="listbox"
@@ -692,7 +692,7 @@ exports[`VDataTableHeader.ts mobile should work with showGroupBy 1`] = `
   <tr>
     <th>
       <div class="v-data-table-header-mobile__wrapper">
-        <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+        <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
           <div class="v-input__control">
             <div role="button"
                  aria-haspopup="listbox"
@@ -742,7 +742,7 @@ exports[`VDataTableHeader.ts mobile should work with sortBy correctly 1`] = `
   <tr>
     <th>
       <div class="v-data-table-header-mobile__wrapper">
-        <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+        <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
           <div class="v-input__control">
             <div role="button"
                  aria-haspopup="listbox"
@@ -807,7 +807,7 @@ exports[`VDataTableHeader.ts mobile should work with sortDesc correctly 1`] = `
   <tr>
     <th>
       <div class="v-data-table-header-mobile__wrapper">
-        <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+        <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
           <div class="v-input__control">
             <div role="button"
                  aria-haspopup="listbox"

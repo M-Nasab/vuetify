@@ -215,7 +215,7 @@ exports[`VSelect.ts should only show items if they are in items 4`] = `
 `;
 
 exports[`VSelect.ts should render v-select correctly when not using scope slot 1`] = `
-<div class="v-input theme--light v-text-field v-select">
+<div class="v-input theme--light direction--ltr v-text-field v-select">
   <div class="v-input__control">
     <div role="button"
          aria-haspopup="listbox"
@@ -260,7 +260,7 @@ exports[`VSelect.ts should render v-select correctly when not using scope slot 1
 `;
 
 exports[`VSelect.ts should render v-select correctly when not using v-list-item in item scope slot 1`] = `
-<div class="v-input theme--light v-text-field v-select">
+<div class="v-input theme--light direction--ltr v-text-field v-select">
   <div class="v-input__control">
     <div role="button"
          aria-haspopup="listbox"
@@ -305,7 +305,7 @@ exports[`VSelect.ts should render v-select correctly when not using v-list-item 
 `;
 
 exports[`VSelect.ts should render v-select correctly when using v-list-item in item scope slot 1`] = `
-<div class="v-input theme--light v-text-field v-select">
+<div class="v-input theme--light direction--ltr v-text-field v-select">
   <div class="v-input__control">
     <div role="button"
          aria-haspopup="listbox"

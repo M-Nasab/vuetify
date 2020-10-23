@@ -54,6 +54,61 @@
         > .v-input__control > .v-input__slot fieldset
           color: map-deep-get($material, 'text-fields', 'outlined-disabled')
 
++direction(v-text-field) using ($direction, $start, $end)
+  .v-input__prepend-inner
+      margin-#{$end}: auto
+      padding-#{$start}: $text-field-append-prepend-margin
+
+  .v-input__append-inner
+      margin-#{$start}: auto
+      padding-#{$start}: $text-field-append-prepend-margin
+
+  .v-counter
+    margin-#{$start}: $text-field-counter-margin
+
+  .v-label
+    transform-origin: top #{$start}
+
+  &__prefix
+    text-align: #{$end}
+    padding-#{$end}: $text-field-append-prepend-margin
+
+  &__suffix
+    padding-#{$start}: $text-field-append-prepend-margin
+
+  &--reverse
+    .v-text-field__prefix
+      text-align: #{$start}
+      padding-#{$end}: 0
+      padding-#{$start}: $text-field-append-prepend-margin
+
+    .v-text-field__suffix
+      padding-#{$start}: 0
+      padding-#{$end}: $text-field-append-prepend-margin
+
+    input
+      text-align: #{$end}
+
+    .v-label
+      transform-origin: top #{$end}
+
+  &--outlined
+    fieldset
+      padding-#{$start}: $text-field-outlined-fieldset-padding
+
+    &.v-text-field--reverse fieldset
+      padding-#{$end}: $text-field-outlined-fieldset-padding
+
+    legend
+      text-align: #{$start}
+
+    &.v-text-field--reverse legend
+      text-align: #{$end}
+
+    &.v-text-field--rounded
+      legend
+        margin-#{$start}: $text-field-rounded-legend-margin
+
 .v-text-field
   padding-top: $text-field-active-label-height
   margin-top: $input-top-spacing - $text-field-active-label-height
@@ -112,32 +167,8 @@
     line-height: 1
     user-select: none
 
-  .v-input__prepend-inner
-    +ltr()
-      margin-right: auto
-      padding-right: $text-field-append-prepend-margin
-
-    +rtl()
-      margin-left: auto
-      padding-left: $text-field-append-prepend-margin
-
-  .v-input__append-inner
-    +ltr()
-      margin-left: auto
-      padding-left: $text-field-append-prepend-margin
-
-    +rtl()
-      margin-right: auto
-      padding-right: $text-field-append-prepend-margin
-
   .v-counter
     white-space: nowrap
-
-    +ltr()
-      margin-left: $text-field-counter-margin
-
-    +rtl()
-      margin-right: $text-field-counter-margin
 
   .v-label
     max-width: 90%
@@ -146,12 +177,6 @@
     top: $text-field-label-top // equal to the margin top of icons
     white-space: nowrap
     pointer-events: none
-
-    +ltr()
-      transform-origin: top left
-
-    +rtl()
-      transform-origin: top right
 
     &--active
       max-width: 133%
@@ -195,45 +220,8 @@
     transition: color $primary-transition
     white-space: nowrap
 
-  &__prefix
-    +ltr()
-      text-align: right
-      padding-right: $text-field-append-prepend-margin
-
-    +rtl()
-      text-align: left
-      padding-left: $text-field-append-prepend-margin
-
   &__suffix
     white-space: nowrap
-
-    +ltr()
-      padding-left: $text-field-append-prepend-margin
-
-    +rtl()
-      padding-right: $text-field-append-prepend-margin
-
-  &--reverse
-    .v-text-field__prefix
-
-      +ltr()
-        text-align: left
-        padding-right: 0
-        padding-left: $text-field-append-prepend-margin
-
-      +rtl()
-        text-align: right
-        padding-right: $text-field-append-prepend-margin
-        padding-left: 0
-
-    .v-text-field__suffix
-      +ltr()
-        padding-left: 0
-        padding-right: $text-field-append-prepend-margin
-
-      +rtl()
-        padding-left: $text-field-append-prepend-margin
-        padding-right: 0
 
   & > .v-input__control > .v-input__slot > .v-text-field__slot
     display: flex
@@ -345,20 +333,6 @@
       margin-bottom: $text-field-details-margin-bottom
 
   &--reverse
-    input
-      +ltr()
-        text-align: right
-
-      +rtl()
-        text-align: left
-
-    .v-label
-      +ltr()
-        transform-origin: top right
-
-      +rtl()
-        transform-origin: top left
-
     & > .v-input__control > .v-input__slot,
     .v-text-field__slot
       flex-direction: row-reverse
@@ -399,45 +373,10 @@
       transition-property: color, border-width
       transition-timing-function: map-get($transition, 'fast-in-fast-out')
 
-      +ltr()
-        padding-left: $text-field-outlined-fieldset-padding
-
-      +rtl()
-        padding-right: $text-field-outlined-fieldset-padding
-
-
-    &.v-text-field--reverse fieldset
-      +ltr()
-        padding-right: $text-field-outlined-fieldset-padding
-
-      +rtl()
-        padding-left: $text-field-outlined-fieldset-padding
-
     legend
       line-height: $text-field-outlined-legend-line-height
       padding: 0
       transition: width $primary-transition
-
-      +ltr()
-        text-align: left
-
-      +rtl()
-        text-align: right
-
-    &.v-text-field--reverse legend
-      +ltr()
-        text-align: right
-
-      +rtl()
-        text-align: left
-
-    &.v-text-field--rounded
-      legend
-        +ltr()
-          margin-left: $text-field-rounded-legend-margin
-
-        +rtl()
-          margin-right: $text-field-rounded-legend-margin
 
     & > .v-input__control > .v-input__slot
       background: transparent

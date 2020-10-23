@@ -8,6 +8,7 @@ import VIcon from '../VIcon'
 import Colorable from '../../mixins/colorable'
 import Localable from '../../mixins/localable'
 import Themeable from '../../mixins/themeable'
+import Directionable from '../../mixins/directionable'
 
 // Utils
 import { createNativeLocaleFormatter, monthChange } from './util'
@@ -20,7 +21,8 @@ import { DatePickerFormatter } from 'vuetify/types'
 export default mixins(
   Colorable,
   Localable,
-  Themeable
+  Themeable,
+  Directionable,
 /* @vue/component */
 ).extend({
   name: 'v-date-picker-header',
@@ -94,7 +96,7 @@ export default mixins(
           },
         },
       }, [
-        this.$createElement(VIcon, ((change < 0) === !this.$vuetify.rtl) ? this.prevIcon : this.nextIcon),
+        this.$createElement(VIcon, ((change < 0) === !this.isRtl) ? this.prevIcon : this.nextIcon),
       ])
     },
     calculateChange (sign: number) {
@@ -121,7 +123,7 @@ export default mixins(
 
       const transition = this.$createElement('transition', {
         props: {
-          name: (this.isReversing === !this.$vuetify.rtl) ? 'tab-reverse-transition' : 'tab-transition',
+          name: (this.isReversing === !this.isRtl) ? 'tab-reverse-transition' : 'tab-transition',
         },
       }, [header])
 
@@ -140,6 +142,7 @@ export default mixins(
       class: {
         'v-date-picker-header--disabled': this.disabled,
         ...this.themeClasses,
+        ...this.directionClasses,
       },
     }, [
       this.genBtn(-1),

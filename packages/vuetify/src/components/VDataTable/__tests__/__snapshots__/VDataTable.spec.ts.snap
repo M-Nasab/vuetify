@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`VDataTable.ts should apply class from item to rows 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -16,7 +16,7 @@ exports[`VDataTable.ts should apply class from item to rows 1`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -313,10 +313,10 @@ exports[`VDataTable.ts should apply class from item to rows 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -393,7 +393,7 @@ exports[`VDataTable.ts should apply class from item to rows 1`] = `
 `;
 
 exports[`VDataTable.ts should apply class function to rows 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -408,7 +408,7 @@ exports[`VDataTable.ts should apply class function to rows 1`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -705,10 +705,10 @@ exports[`VDataTable.ts should apply class function to rows 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -785,7 +785,7 @@ exports[`VDataTable.ts should apply class function to rows 1`] = `
 `;
 
 exports[`VDataTable.ts should apply class list to rows 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -800,7 +800,7 @@ exports[`VDataTable.ts should apply class list to rows 1`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -1097,10 +1097,10 @@ exports[`VDataTable.ts should apply class list to rows 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -1177,7 +1177,7 @@ exports[`VDataTable.ts should apply class list to rows 1`] = `
 `;
 
 exports[`VDataTable.ts should apply class unique to rows 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -1192,7 +1192,7 @@ exports[`VDataTable.ts should apply class unique to rows 1`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -1489,10 +1489,10 @@ exports[`VDataTable.ts should apply class unique to rows 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -1569,7 +1569,7 @@ exports[`VDataTable.ts should apply class unique to rows 1`] = `
 `;
 
 exports[`VDataTable.ts should change page if item count decreases below page start 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -1584,7 +1584,7 @@ exports[`VDataTable.ts should change page if item count decreases below page sta
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -1731,7 +1731,7 @@ exports[`VDataTable.ts should change page if item count decreases below page sta
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__pagination">
       3-4 of 4
     </div>
@@ -1769,7 +1769,7 @@ exports[`VDataTable.ts should change page if item count decreases below page sta
 `;
 
 exports[`VDataTable.ts should default to first option in itemsPerPageOptions if it does not include itemsPerPage 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -1784,7 +1784,7 @@ exports[`VDataTable.ts should default to first option in itemsPerPageOptions if 
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -2131,10 +2131,10 @@ exports[`VDataTable.ts should default to first option in itemsPerPageOptions if 
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -2211,7 +2211,7 @@ exports[`VDataTable.ts should default to first option in itemsPerPageOptions if 
 `;
 
 exports[`VDataTable.ts should handle object when checking if it should default to first option in itemsPerPageOptions 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -2226,7 +2226,7 @@ exports[`VDataTable.ts should handle object when checking if it should default t
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -2773,10 +2773,10 @@ exports[`VDataTable.ts should handle object when checking if it should default t
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -2854,7 +2854,7 @@ exports[`VDataTable.ts should handle object when checking if it should default t
 `;
 
 exports[`VDataTable.ts should hide group button when column is not groupable 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -2869,7 +2869,7 @@ exports[`VDataTable.ts should hide group button when column is not groupable 1`]
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -3416,10 +3416,10 @@ exports[`VDataTable.ts should hide group button when column is not groupable 1`]
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -3497,7 +3497,7 @@ exports[`VDataTable.ts should hide group button when column is not groupable 1`]
 `;
 
 exports[`VDataTable.ts should limit page to current page count if not using server-items-length 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -3512,7 +3512,7 @@ exports[`VDataTable.ts should limit page to current page count if not using serv
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -3809,10 +3809,10 @@ exports[`VDataTable.ts should limit page to current page count if not using serv
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -3889,7 +3889,7 @@ exports[`VDataTable.ts should limit page to current page count if not using serv
 `;
 
 exports[`VDataTable.ts should not limit page to current item count when using server-items-length 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -3904,7 +3904,7 @@ exports[`VDataTable.ts should not limit page to current item count when using se
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -3956,10 +3956,10 @@ exports[`VDataTable.ts should not limit page to current item count when using se
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -4036,7 +4036,7 @@ exports[`VDataTable.ts should not limit page to current item count when using se
 `;
 
 exports[`VDataTable.ts should not limit page to current item count when using server-items-length 2`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -4051,7 +4051,7 @@ exports[`VDataTable.ts should not limit page to current item count when using se
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -4348,10 +4348,10 @@ exports[`VDataTable.ts should not limit page to current item count when using se
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -4427,7 +4427,7 @@ exports[`VDataTable.ts should not limit page to current item count when using se
 `;
 
 exports[`VDataTable.ts should not search column with filterable set to false 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -4442,7 +4442,7 @@ exports[`VDataTable.ts should not search column with filterable set to false 1`]
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -4989,10 +4989,10 @@ exports[`VDataTable.ts should not search column with filterable set to false 1`]
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -5070,7 +5070,7 @@ exports[`VDataTable.ts should not search column with filterable set to false 1`]
 `;
 
 exports[`VDataTable.ts should not search column with filterable set to false 2`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -5085,7 +5085,7 @@ exports[`VDataTable.ts should not search column with filterable set to false 2`]
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -5137,10 +5137,10 @@ exports[`VDataTable.ts should not search column with filterable set to false 2`]
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -5218,7 +5218,7 @@ exports[`VDataTable.ts should not search column with filterable set to false 2`]
 `;
 
 exports[`VDataTable.ts should not search column with filterable set to false and has filter function 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -5233,7 +5233,7 @@ exports[`VDataTable.ts should not search column with filterable set to false and
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -5430,10 +5430,10 @@ exports[`VDataTable.ts should not search column with filterable set to false and
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -5511,7 +5511,7 @@ exports[`VDataTable.ts should not search column with filterable set to false and
 `;
 
 exports[`VDataTable.ts should not search column with filterable set to false and has filter function 2`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -5526,7 +5526,7 @@ exports[`VDataTable.ts should not search column with filterable set to false and
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -6073,10 +6073,10 @@ exports[`VDataTable.ts should not search column with filterable set to false and
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -6154,7 +6154,7 @@ exports[`VDataTable.ts should not search column with filterable set to false and
 `;
 
 exports[`VDataTable.ts should not select item that is not selectable 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -6183,7 +6183,7 @@ exports[`VDataTable.ts should not select item that is not selectable 1`] = `
                   </i>
                 </div>
               </div>
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -6358,10 +6358,10 @@ exports[`VDataTable.ts should not select item that is not selectable 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -6439,7 +6439,7 @@ exports[`VDataTable.ts should not select item that is not selectable 1`] = `
 `;
 
 exports[`VDataTable.ts should pass kebab-case footer props correctly 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -6461,10 +6461,10 @@ exports[`VDataTable.ts should pass kebab-case footer props correctly 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Foo:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -6542,7 +6542,7 @@ exports[`VDataTable.ts should pass kebab-case footer props correctly 1`] = `
 `;
 
 exports[`VDataTable.ts should render 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -6564,10 +6564,10 @@ exports[`VDataTable.ts should render 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -6645,7 +6645,7 @@ exports[`VDataTable.ts should render 1`] = `
 `;
 
 exports[`VDataTable.ts should render footer.page-text slot content 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -6664,10 +6664,10 @@ exports[`VDataTable.ts should render footer.page-text slot content 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -6747,7 +6747,7 @@ exports[`VDataTable.ts should render footer.page-text slot content 1`] = `
 `;
 
 exports[`VDataTable.ts should render item slot when using group-by function 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -6761,7 +6761,7 @@ exports[`VDataTable.ts should render item slot when using group-by function 1`] 
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -6868,10 +6868,10 @@ exports[`VDataTable.ts should render item slot when using group-by function 1`] 
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -6949,7 +6949,7 @@ exports[`VDataTable.ts should render item slot when using group-by function 1`] 
 `;
 
 exports[`VDataTable.ts should render loading state 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -6968,11 +6968,11 @@ exports[`VDataTable.ts should render loading state 1`] = `
             <div role="progressbar"
                  aria-valuemin="0"
                  aria-valuemax="100"
-                 class="v-progress-linear v-progress-linear--absolute v-progress-linear--reverse theme--light"
+                 class="v-progress-linear v-progress-linear--absolute theme--light direction--ltr"
                  style="height: 4px;"
             >
               <div class="v-progress-linear__background primary"
-                   style="opacity: 0.3; right: 0%; width: 100%;"
+                   style="opacity: 0.3; left: 0%; width: 100%;"
               >
               </div>
               <div class="v-progress-linear__buffer">
@@ -6996,10 +6996,10 @@ exports[`VDataTable.ts should render loading state 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -7077,7 +7077,7 @@ exports[`VDataTable.ts should render loading state 1`] = `
 `;
 
 exports[`VDataTable.ts should render loading state 2`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -7092,7 +7092,7 @@ exports[`VDataTable.ts should render loading state 2`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -7153,10 +7153,10 @@ exports[`VDataTable.ts should render loading state 2`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -7234,7 +7234,7 @@ exports[`VDataTable.ts should render loading state 2`] = `
 `;
 
 exports[`VDataTable.ts should render with body slot 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -7249,7 +7249,7 @@ exports[`VDataTable.ts should render with body slot 1`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -7297,10 +7297,10 @@ exports[`VDataTable.ts should render with body slot 1`] = `
       </div>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -7377,7 +7377,7 @@ exports[`VDataTable.ts should render with body slot 1`] = `
 `;
 
 exports[`VDataTable.ts should render with data 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -7392,7 +7392,7 @@ exports[`VDataTable.ts should render with data 1`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -7689,10 +7689,10 @@ exports[`VDataTable.ts should render with data 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -7769,7 +7769,7 @@ exports[`VDataTable.ts should render with data 1`] = `
 `;
 
 exports[`VDataTable.ts should render with group scoped slot 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -7783,7 +7783,7 @@ exports[`VDataTable.ts should render with group scoped slot 1`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -7842,10 +7842,10 @@ exports[`VDataTable.ts should render with group scoped slot 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -7922,7 +7922,7 @@ exports[`VDataTable.ts should render with group scoped slot 1`] = `
 `;
 
 exports[`VDataTable.ts should render with group.summary scoped slot 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -7936,7 +7936,7 @@ exports[`VDataTable.ts should render with group.summary scoped slot 1`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -8353,10 +8353,10 @@ exports[`VDataTable.ts should render with group.summary scoped slot 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -8433,7 +8433,7 @@ exports[`VDataTable.ts should render with group.summary scoped slot 1`] = `
 `;
 
 exports[`VDataTable.ts should render with grouped rows 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -8447,7 +8447,7 @@ exports[`VDataTable.ts should render with grouped rows 1`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -8812,10 +8812,10 @@ exports[`VDataTable.ts should render with grouped rows 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -8892,7 +8892,7 @@ exports[`VDataTable.ts should render with grouped rows 1`] = `
 `;
 
 exports[`VDataTable.ts should render with item scoped slot 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -8907,7 +8907,7 @@ exports[`VDataTable.ts should render with item scoped slot 1`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -8969,10 +8969,10 @@ exports[`VDataTable.ts should render with item scoped slot 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -9049,7 +9049,7 @@ exports[`VDataTable.ts should render with item scoped slot 1`] = `
 `;
 
 exports[`VDataTable.ts should render with item.expanded scoped slot 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -9064,7 +9064,7 @@ exports[`VDataTable.ts should render with item.expanded scoped slot 1`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -9386,10 +9386,10 @@ exports[`VDataTable.ts should render with item.expanded scoped slot 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -9466,7 +9466,7 @@ exports[`VDataTable.ts should render with item.expanded scoped slot 1`] = `
 `;
 
 exports[`VDataTable.ts should render with showExpand 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -9482,7 +9482,7 @@ exports[`VDataTable.ts should render with showExpand 1`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -9834,10 +9834,10 @@ exports[`VDataTable.ts should render with showExpand 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -9914,7 +9914,7 @@ exports[`VDataTable.ts should render with showExpand 1`] = `
 `;
 
 exports[`VDataTable.ts should render with showExpand 2`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -9930,7 +9930,7 @@ exports[`VDataTable.ts should render with showExpand 2`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -10282,10 +10282,10 @@ exports[`VDataTable.ts should render with showExpand 2`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -10362,7 +10362,7 @@ exports[`VDataTable.ts should render with showExpand 2`] = `
 `;
 
 exports[`VDataTable.ts should render with showSelect 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -10391,7 +10391,7 @@ exports[`VDataTable.ts should render with showSelect 1`] = `
                   </i>
                 </div>
               </div>
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -10763,10 +10763,10 @@ exports[`VDataTable.ts should render with showSelect 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -10843,7 +10843,7 @@ exports[`VDataTable.ts should render with showSelect 1`] = `
 `;
 
 exports[`VDataTable.ts should respect mustSort property on options 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -10853,7 +10853,7 @@ exports[`VDataTable.ts should respect mustSort property on options 1`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -11000,10 +11000,10 @@ exports[`VDataTable.ts should respect mustSort property on options 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -11081,7 +11081,7 @@ exports[`VDataTable.ts should respect mustSort property on options 1`] = `
 `;
 
 exports[`VDataTable.ts should search group-by column 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -11091,7 +11091,7 @@ exports[`VDataTable.ts should search group-by column 1`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -11212,10 +11212,10 @@ exports[`VDataTable.ts should search group-by column 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -11293,7 +11293,7 @@ exports[`VDataTable.ts should search group-by column 1`] = `
 `;
 
 exports[`VDataTable.ts should search group-by column 2`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -11303,7 +11303,7 @@ exports[`VDataTable.ts should search group-by column 2`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -11387,10 +11387,10 @@ exports[`VDataTable.ts should search group-by column 2`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -11468,7 +11468,7 @@ exports[`VDataTable.ts should search group-by column 2`] = `
 `;
 
 exports[`VDataTable.ts should show correct aria-labels when sorting 1`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -11483,7 +11483,7 @@ exports[`VDataTable.ts should show correct aria-labels when sorting 1`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -11795,10 +11795,10 @@ exports[`VDataTable.ts should show correct aria-labels when sorting 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -11876,7 +11876,7 @@ exports[`VDataTable.ts should show correct aria-labels when sorting 1`] = `
 `;
 
 exports[`VDataTable.ts should show correct aria-labels when sorting 2`] = `
-<div class="v-data-table theme--light">
+<div class="v-data-table theme--light direction--ltr">
   <div class="v-data-table__wrapper">
     <table>
       <colgroup>
@@ -11891,7 +11891,7 @@ exports[`VDataTable.ts should show correct aria-labels when sorting 2`] = `
         <tr>
           <th>
             <div class="v-data-table-header-mobile__wrapper">
-              <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+              <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
                 <div class="v-input__control">
                   <div role="button"
                        aria-haspopup="listbox"
@@ -12203,10 +12203,10 @@ exports[`VDataTable.ts should show correct aria-labels when sorting 2`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"

@@ -5,6 +5,10 @@
   .v-badge__badge::after
     border-color: map-get($material, 'cards')
 
++direction(v-badge) using ($direction, $start, $end)
+  &__badge
+    #{$end}: $badge-right
+
 .v-badge
   display: inline-block
   line-height: $badge-line-height
@@ -27,12 +31,6 @@
     top: $badge-top
     transition: $primary-transition
     white-space: nowrap
-
-    +ltr()
-      right: $badge-right
-
-    +rtl()
-      left: $badge-right
 
     .v-icon
       color: inherit

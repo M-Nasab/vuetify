@@ -2,10 +2,14 @@ import './VSimpleTable.sass'
 
 import { convertToUnit } from '../../util/helpers'
 import Themeable from '../../mixins/themeable'
+import Directionable from '../../mixins/directionable'
 import mixins from '../../util/mixins'
 import { VNode } from 'vue'
 
-export default mixins(Themeable).extend({
+export default mixins(
+  Themeable,
+  Directionable,
+).extend({
   name: 'v-simple-table',
 
   props: {
@@ -21,6 +25,7 @@ export default mixins(Themeable).extend({
         'v-data-table--fixed-height': !!this.height && !this.fixedHeader,
         'v-data-table--fixed-header': this.fixedHeader,
         ...this.themeClasses,
+        ...this.directionClasses,
       }
     },
   },

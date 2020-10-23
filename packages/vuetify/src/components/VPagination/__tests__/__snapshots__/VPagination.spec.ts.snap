@@ -4,7 +4,7 @@ exports[`VPagination.ts emits an event when next or previous is clicked 1`] = `
 <nav role="navigation"
      aria-label="$vuetify.pagination.ariaLabel.wrapper"
 >
-  <ul class="v-pagination theme--light">
+  <ul class="v-pagination theme--light direction--ltr">
     <li>
       <button type="button"
               aria-label="$vuetify.pagination.ariaLabel.previous"
@@ -76,7 +76,7 @@ exports[`VPagination.ts should only render end of range if value is equals "righ
 <nav role="navigation"
      aria-label="$vuetify.pagination.ariaLabel.wrapper"
 >
-  <ul class="v-pagination theme--light">
+  <ul class="v-pagination theme--light direction--ltr">
     <li>
       <button type="button"
               aria-label="$vuetify.pagination.ariaLabel.previous"
@@ -145,7 +145,7 @@ exports[`VPagination.ts should only render middle of range if length is big and 
 <nav role="navigation"
      aria-label="$vuetify.pagination.ariaLabel.wrapper"
 >
-  <ul class="v-pagination theme--light">
+  <ul class="v-pagination theme--light direction--ltr">
     <li>
       <button type="button"
               aria-label="$vuetify.pagination.ariaLabel.previous"
@@ -347,7 +347,7 @@ exports[`VPagination.ts should only render start and end of range if length is b
 <nav role="navigation"
      aria-label="$vuetify.pagination.ariaLabel.wrapper"
 >
-  <ul class="v-pagination theme--light">
+  <ul class="v-pagination theme--light direction--ltr">
     <li>
       <button type="button"
               aria-label="$vuetify.pagination.ariaLabel.previous"
@@ -551,7 +551,7 @@ exports[`VPagination.ts should only render start of range if value is equals "le
 <nav role="navigation"
      aria-label="$vuetify.pagination.ariaLabel.wrapper"
 >
-  <ul class="v-pagination theme--light">
+  <ul class="v-pagination theme--light direction--ltr">
     <li>
       <button type="button"
               aria-label="$vuetify.pagination.ariaLabel.previous"
@@ -620,7 +620,7 @@ exports[`VPagination.ts should render component in RTL mode and match snapshot 1
 <nav role="navigation"
      aria-label="$vuetify.pagination.ariaLabel.wrapper"
 >
-  <ul class="v-pagination theme--light">
+  <ul class="v-pagination theme--light direction--rtl">
     <li>
       <button type="button"
               aria-label="$vuetify.pagination.ariaLabel.previous"
@@ -692,7 +692,7 @@ exports[`VPagination.ts should render disabled buttons with length equals to 0 1
 <nav role="navigation"
      aria-label="$vuetify.pagination.ariaLabel.wrapper"
 >
-  <ul class="v-pagination theme--light">
+  <ul class="v-pagination theme--light direction--ltr">
     <li>
       <button type="button"
               aria-label="$vuetify.pagination.ariaLabel.previous"
@@ -723,7 +723,7 @@ exports[`VPagination.ts should use totalVisible prop if defined 1`] = `
 <nav role="navigation"
      aria-label="$vuetify.pagination.ariaLabel.wrapper"
 >
-  <ul class="v-pagination theme--light">
+  <ul class="v-pagination theme--light direction--ltr">
     <li>
       <button type="button"
               aria-label="$vuetify.pagination.ariaLabel.previous"

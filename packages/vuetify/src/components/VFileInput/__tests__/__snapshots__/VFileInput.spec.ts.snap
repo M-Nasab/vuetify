@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`VFileInput.ts should be unclearable 1`] = `
-<div class="v-input theme--light v-text-field v-file-input">
+<div class="v-input theme--light direction--ltr v-text-field v-file-input">
   <div class="v-input__prepend-outer">
     <div class="v-input__icon v-input__icon--prepend">
       <button type="button"
@@ -36,7 +36,7 @@ exports[`VFileInput.ts should be unclearable 1`] = `
 `;
 
 exports[`VFileInput.ts should display file size 1`] = `
-<div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-file-input">
+<div class="v-input v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-file-input">
   <div class="v-input__prepend-outer">
     <div class="v-input__icon v-input__icon--prepend">
       <button type="button"
@@ -82,7 +82,7 @@ exports[`VFileInput.ts should display file size 1`] = `
 `;
 
 exports[`VFileInput.ts should display file size 2`] = `
-<div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-file-input">
+<div class="v-input v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-file-input">
   <div class="v-input__prepend-outer">
     <div class="v-input__icon v-input__icon--prepend">
       <button type="button"
@@ -128,7 +128,7 @@ exports[`VFileInput.ts should display file size 2`] = `
 `;
 
 exports[`VFileInput.ts should display total size in counter 1`] = `
-<div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-file-input">
+<div class="v-input v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-file-input">
   <div class="v-input__prepend-outer">
     <div class="v-input__icon v-input__icon--prepend">
       <button type="button"
@@ -177,7 +177,7 @@ exports[`VFileInput.ts should display total size in counter 1`] = `
 `;
 
 exports[`VFileInput.ts should display total size in counter 2`] = `
-<div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-file-input">
+<div class="v-input v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-file-input">
   <div class="v-input__prepend-outer">
     <div class="v-input__icon v-input__icon--prepend">
       <button type="button"
@@ -226,7 +226,7 @@ exports[`VFileInput.ts should display total size in counter 2`] = `
 `;
 
 exports[`VFileInput.ts should render 1`] = `
-<div class="v-input theme--light v-text-field v-file-input">
+<div class="v-input theme--light direction--ltr v-text-field v-file-input">
   <div class="v-input__prepend-outer">
     <div class="v-input__icon v-input__icon--prepend">
       <button type="button"
@@ -272,7 +272,7 @@ exports[`VFileInput.ts should render 1`] = `
 `;
 
 exports[`VFileInput.ts should render chips 1`] = `
-<div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-file-input">
+<div class="v-input v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-file-input">
   <div class="v-input__prepend-outer">
     <div class="v-input__icon v-input__icon--prepend">
       <button type="button"
@@ -322,7 +322,7 @@ exports[`VFileInput.ts should render chips 1`] = `
 `;
 
 exports[`VFileInput.ts should render counter 1`] = `
-<div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-file-input">
+<div class="v-input v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-file-input">
   <div class="v-input__prepend-outer">
     <div class="v-input__icon v-input__icon--prepend">
       <button type="button"
@@ -371,7 +371,7 @@ exports[`VFileInput.ts should render counter 1`] = `
 `;
 
 exports[`VFileInput.ts should render small chips 1`] = `
-<div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-file-input">
+<div class="v-input v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-file-input">
   <div class="v-input__prepend-outer">
     <div class="v-input__icon v-input__icon--prepend">
       <button type="button"
@@ -421,7 +421,7 @@ exports[`VFileInput.ts should render small chips 1`] = `
 `;
 
 exports[`VFileInput.ts should render without icon 1`] = `
-<div class="v-input theme--light v-text-field v-file-input">
+<div class="v-input theme--light direction--ltr v-text-field v-file-input">
   <div class="v-input__control">
     <div class="v-input__slot">
       <div class="v-text-field__slot">
@@ -457,7 +457,7 @@ exports[`VFileInput.ts should render without icon 1`] = `
 `;
 
 exports[`VFileInput.ts should set display none if hide-input prop is set 1`] = `
-<div class="v-input theme--light v-text-field v-file-input">
+<div class="v-input theme--light direction--ltr v-text-field v-file-input">
   <div class="v-input__prepend-outer">
     <div class="v-input__icon v-input__icon--prepend">
       <button type="button"

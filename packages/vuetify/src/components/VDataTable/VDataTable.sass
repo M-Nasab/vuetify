@@ -18,6 +18,14 @@
   .v-data-table__empty-wrapper
     color: map-deep-get($material, 'text', 'disabled')
 
++direction using ($direction, $start, $end)
+  .v-data-table__mobile-row
+    &__header
+      padding-#{$end}: 16px
+
+      &__cell
+        text-align: #{$end}
+
 .v-data-table
   border-radius: $data-table-border-radius
 
@@ -47,19 +55,6 @@
 
   &__header
     font-weight: $data-table-mobile-row-header-font-weight
-    
-    +ltr()
-      padding-right: 16px
-
-    +rtl()
-      padding-left: 16px
-
-  &__cell
-    +ltr()
-      text-align: right
-
-    +rtl()
-      text-align: left
 
 .v-row-group
   &__header, &__summary

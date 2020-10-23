@@ -8,6 +8,47 @@
   .v-slider__thumb
     background: map-deep-get($material, 'slider', 'inactive')
 
++direction using ($direction, $start, $end)
+  .v-slider__tick
+    &:first-child .v-slider__tick-label
+      transform: if($direction == ltr, none, translateX(100%))
+
+    &:last-child .v-slider__tick-label
+      transform: if($direction == ltr, translateX(-100%), none)
+
+  .v-slider--horizontal
+    .v-slider__tick
+      &:first-child .v-slider__tick-label
+        transform: translateX(0%)
+
+      &:last-child .v-slider__tick-label
+        transform: if($direction == ltr, translateX(-100%), translateX(100%))
+
+      .v-slider__tick-label
+        transform: if($direction == ltr, translateX(-50%), translateX(50%))
+
+  .v-slider--vertical
+    .v-slider__tick
+      .v-slider__tick-label,
+      &:first-child .v-slider__tick-label,
+      &:last-child .v-slider__tick-label
+        transform: translateY(-50%)
+        #{$start}: 12px
+
+  // Input
+  .v-input__slider
+    .v-input__slot .v-label
+      margin-#{$start}: 0
+      margin-#{$end}: $slider-label-margin-end
+
+  .v-input__slider--inverse-label
+    .v-input__slot .v-label
+      margin-#{$end}: 0
+      margin-#{$start}: $slider-label-margin-start
+
+  .v-input__slider--vertical
+    flex-direction: if($direction == ltr, column-reverse, column)
+
 // Block
 .v-slider
   cursor: default
@@ -82,20 +123,6 @@
   &--filled
     background-color: rgba(255, 255, 255, 0.5) // TODO: move to theme mixin?
 
-  &:first-child .v-slider__tick-label
-    +ltr()
-      transform: none
-
-    +rtl()
-      transform: translateX(100%)
-
-  &:last-child .v-slider__tick-label
-    +ltr()
-      transform: translateX(-100%)
-
-    +rtl()
-      transform: none
-
 .v-slider__tick-label
   position: absolute
   user-select: none
@@ -145,28 +172,8 @@
     width: 100%
 
   .v-slider__tick
-    &:first-child .v-slider__tick-label
-      +ltr()
-        transform: translateX(0%)
-
-      +rtl()
-        transform: translateX(0%)
-
-    &:last-child .v-slider__tick-label
-      +ltr()
-        transform: translateX(-100%)
-
-      +rtl()
-        transform: translateX(100%)
-
     .v-slider__tick-label
       top: 8px
-
-      +ltr()
-        transform: translateX(-50%)
-
-      +rtl()
-        transform: translateX(50%)
 
   .v-slider__thumb-label
     // Needed for IE11 which does not
@@ -202,18 +209,6 @@
     height: 100%
     left: 50%
     transform: translateX(-50%)
-
-  .v-slider__tick
-    .v-slider__tick-label,
-    &:first-child .v-slider__tick-label,
-    &:last-child .v-slider__tick-label
-      +ltr()
-        transform: translateY(-50%)
-        left: 12px
-
-      +rtl()
-        transform: translateY(-50%)
-        right: 12px
 
   .v-slider__thumb-label
     // Needed for IE11 which does not
@@ -256,33 +251,8 @@
   &.v-input--is-readonly > .v-input__control
     pointer-events: none
 
-  .v-input__slot .v-label
-    +ltr()
-      margin-left: 0
-      margin-right: $slider-label-margin-end
-
-    +rtl()
-      margin-right: 0
-      margin-left: $slider-label-margin-end
-
-.v-input__slider--inverse-label
-  .v-input__slot .v-label
-    +ltr()
-      margin-right: 0
-      margin-left: $slider-label-margin-start
-
-    +rtl()
-      margin-left: 0
-      margin-right: $slider-label-margin-start
-
 .v-input__slider--vertical
   align-items: center
-
-  +ltr()
-    flex-direction: column-reverse
-
-  +rtl()
-    flex-direction: column
 
   .v-input
     &__slot, &__prepend-outer, &__append-outer
