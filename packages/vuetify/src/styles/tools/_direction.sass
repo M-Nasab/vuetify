@@ -1,12 +1,20 @@
-@mixin direction($components)
+@mixin direction($components: null)
   $directions: (rtl, ltr)
 
-  @each $component in $components
+  @if $components == null
     @each $direction in $directions
-      .direction--#{$direction}.#{$component}
-        $start: if($direction == rtl, right, left)
-        $end: if($direction == rtl, left, right)
-        
-        direction: $direction
-
-        @content($direction, $start, $end)
+        .direction--#{$direction}
+          $start: if($direction == rtl, right, left)
+          $end: if($direction == rtl, left, right)
+            
+          direction: $direction
+          @content($direction, $start, $end)
+  @else
+    @each $component in $components
+      @each $direction in $directions
+        .direction--#{$direction}.#{$component}
+          $start: if($direction == rtl, right, left)
+          $end: if($direction == rtl, left, right)
+            
+          direction: $direction
+          @content($direction, $start, $end)
