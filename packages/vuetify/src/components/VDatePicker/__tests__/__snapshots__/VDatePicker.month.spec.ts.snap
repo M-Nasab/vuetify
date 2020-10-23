@@ -147,7 +147,7 @@ exports[`VDatePicker.ts should match snapshot with colored picker & header 1`] =
        style="width: 290px;"
   >
     <div>
-      <div class="v-date-picker-header theme--light">
+      <div class="v-date-picker-header theme--light direction--ltr">
         <button type="button"
                 class="v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--default"
                 aria-label="Previous year"
@@ -323,7 +323,7 @@ exports[`VDatePicker.ts should match snapshot with colored picker 1`] = `
        style="width: 290px;"
   >
     <div>
-      <div class="v-date-picker-header theme--light">
+      <div class="v-date-picker-header theme--light direction--ltr">
         <button type="button"
                 class="v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--default"
                 aria-label="Previous year"
@@ -620,7 +620,7 @@ exports[`VDatePicker.ts should match snapshot with pick-month prop 1`] = `
        style="width: 290px;"
   >
     <div>
-      <div class="v-date-picker-header theme--light">
+      <div class="v-date-picker-header theme--light direction--ltr">
         <button type="button"
                 class="v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--default"
                 aria-label="Previous year"
@@ -796,7 +796,7 @@ exports[`VDatePicker.ts should render flat picker 1`] = `
        style="width: 290px;"
   >
     <div>
-      <div class="v-date-picker-header theme--light">
+      <div class="v-date-picker-header theme--light direction--ltr">
         <button type="button"
                 class="v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--default"
                 aria-label="Previous year"
@@ -972,7 +972,7 @@ exports[`VDatePicker.ts should render picker with elevation 1`] = `
        style="width: 290px;"
   >
     <div>
-      <div class="v-date-picker-header theme--light">
+      <div class="v-date-picker-header theme--light direction--ltr">
         <button type="button"
                 class="v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--default"
                 aria-label="Previous year"

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`VDatePickerHeader.ts should render component and match snapshot 1`] = `
-<div class="v-date-picker-header theme--light">
+<div class="v-date-picker-header theme--light direction--ltr">
   <button type="button"
           class="v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--default"
   >
@@ -33,13 +33,13 @@ exports[`VDatePickerHeader.ts should render component and match snapshot 1`] = `
 `;
 
 exports[`VDatePickerHeader.ts should render component in RTL mode and match snapshot 1`] = `
-<div class="v-date-picker-header theme--light">
+<div class="v-date-picker-header theme--light direction--ltr">
   <button type="button"
           class="v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--default"
   >
     <span class="v-btn__content">
       <i aria-hidden="true"
-         class="v-icon notranslate mdi mdi-chevron-right theme--light"
+         class="v-icon notranslate mdi mdi-chevron-left theme--light"
       >
       </i>
     </span>
@@ -56,7 +56,7 @@ exports[`VDatePickerHeader.ts should render component in RTL mode and match snap
   >
     <span class="v-btn__content">
       <i aria-hidden="true"
-         class="v-icon notranslate mdi mdi-chevron-left theme--light"
+         class="v-icon notranslate mdi mdi-chevron-right theme--light"
       >
       </i>
     </span>
@@ -65,7 +65,7 @@ exports[`VDatePickerHeader.ts should render component in RTL mode and match snap
 `;
 
 exports[`VDatePickerHeader.ts should render component with default slot and match snapshot 1`] = `
-<div class="v-date-picker-header theme--light">
+<div class="v-date-picker-header theme--light direction--ltr">
   <button type="button"
           class="v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--default"
   >
@@ -99,7 +99,7 @@ exports[`VDatePickerHeader.ts should render component with default slot and matc
 `;
 
 exports[`VDatePickerHeader.ts should render disabled component and match snapshot 1`] = `
-<div class="v-date-picker-header v-date-picker-header--disabled theme--light">
+<div class="v-date-picker-header v-date-picker-header--disabled theme--light direction--ltr">
   <button type="button"
           disabled="disabled"
           class="v-btn v-btn--disabled v-btn--flat v-btn--icon v-btn--round theme--light v-size--default"
@@ -133,7 +133,7 @@ exports[`VDatePickerHeader.ts should render disabled component and match snapsho
 `;
 
 exports[`VDatePickerHeader.ts should render readonly component and match snapshot 1`] = `
-<div class="v-date-picker-header theme--light">
+<div class="v-date-picker-header theme--light direction--ltr">
   <button type="button"
           class="v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--default"
   >

@@ -7,6 +7,7 @@ import Touch from '../../../directives/touch'
 import Colorable from '../../../mixins/colorable'
 import Localable from '../../../mixins/localable'
 import Themeable from '../../../mixins/themeable'
+import Directionable from '../../../mixins/directionable'
 
 // Utils
 import { createItemTypeNativeListeners } from '../util'
@@ -35,7 +36,8 @@ type CalculateTableDateFunction = (v: number) => string
 export default mixins(
   Colorable,
   Localable,
-  Themeable
+  Themeable,
+  Directionable,
 /* @vue/component */
 ).extend({
   directives: { Touch },
@@ -72,7 +74,7 @@ export default mixins(
 
   computed: {
     computedTransition (): string {
-      return (this.isReversing === !this.$vuetify.rtl) ? 'tab-reverse-transition' : 'tab-transition'
+      return (this.isReversing === !this.isRtl) ? 'tab-reverse-transition' : 'tab-transition'
     },
     displayedMonth (): number {
       return Number(this.tableDate.split('-')[1]) - 1
