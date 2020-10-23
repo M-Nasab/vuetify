@@ -101,9 +101,6 @@ export default mixins(
     computedYOffset (): string {
       return this.calcPosition(this.offsetY)
     },
-    isRtl (): boolean {
-      return this.componentIsRTL
-    },
     // Default fallback if offsetX
     // or offsetY are undefined.
     offset (): number {

@@ -2,7 +2,9 @@ import Vue from 'vue'
 import { PropType, RenderContext } from 'vue/types/options'
 
 interface options extends Vue {
-    isRTL: boolean
+    direction: {
+      isRtl: boolean
+    }
 }
 
 /* @vue/component */
@@ -11,13 +13,15 @@ const Directionable = Vue.extend<options>().extend({
 
   provide (): object {
     return {
-      isRTL: this.directionableProvide,
+      direction: this.directionableProvide,
     }
   },
 
   inject: {
-    isRTL: {
-      default: false,
+    direction: {
+      default: {
+        isRtl: false,
+      },
     },
   },
 
@@ -34,7 +38,9 @@ const Directionable = Vue.extend<options>().extend({
 
   data () {
     return {
-      directionableProvide: false,
+      directionableProvide: {
+        isRtl: false,
+      },
     }
   },
 
@@ -42,7 +48,7 @@ const Directionable = Vue.extend<options>().extend({
     appIsRTL (): boolean {
       return this.$vuetify.rtl || false
     },
-    componentIsRTL (): boolean {
+    isRtl (): boolean {
       if (this.rtl === true) {
         // explicitly rtl
         return true
@@ -51,13 +57,13 @@ const Directionable = Vue.extend<options>().extend({
         return false
       } else {
         // inherit from parent, or default false if there is none
-        return this.isRTL
+        return this.direction.isRtl
       }
     },
     directionClasses (): Dictionary<boolean> {
       return {
-        'direction--rtl': this.componentIsRTL,
-        'direction--ltr': !this.componentIsRTL,
+        'direction--rtl': this.isRtl,
+        'direction--ltr': !this.isRtl,
       }
     },
     /** Used by menus and dialogs, inherits from v-app instead of the parent */
@@ -82,10 +88,10 @@ const Directionable = Vue.extend<options>().extend({
   },
 
   watch: {
-    componentIsRTL: {
+    isRtl: {
       handler (newVal, oldVal) {
         if (newVal !== oldVal) {
-          this.directionableProvide = this.isRTL
+          this.directionableProvide.isRtl = this.isRtl
         }
       },
       immediate: true,
@@ -100,6 +106,6 @@ export function functionalDirectionClasses (context: RenderContext): object {
     ...context.props,
     ...context.injections,
   }
-  const componentIsRTL = Directionable.options.computed.componentIsRTL.call(vm)
-  return Directionable.options.computed.directionClasses.call({ componentIsRTL })
+  const isRtl = Directionable.options.computed.isRtl.call(vm)
+  return Directionable.options.computed.directionClasses.call({ isRtl })
 }

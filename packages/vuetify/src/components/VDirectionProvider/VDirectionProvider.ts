@@ -11,10 +11,10 @@ export default Directionable.extend({
   props: { root: Boolean },
 
   computed: {
-    componentIsRTL (): boolean {
+    isRtl (): boolean {
       return this.root
         ? this.rootIsRTL
-        : Directionable.options.computed.componentIsRTL.call(this)
+        : Directionable.options.computed.isRtl.call(this)
     },
   },
 

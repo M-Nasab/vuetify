@@ -38,7 +38,7 @@ export default mixins(
     isDark (): boolean {
       return this.$vuetify.theme.dark
     },
-    componentIsRTL (): boolean {
+    isRtl (): boolean {
       return this.$vuetify.rtl
     },
   },
@@ -55,8 +55,8 @@ export default mixins(
     return h('div', {
       staticClass: 'v-application',
       class: {
-        'v-application--is-rtl': this.componentIsRTL,
-        'v-application--is-ltr': !this.componentIsRTL,
+        'v-application--is-rtl': this.isRtl,
+        'v-application--is-ltr': !this.isRtl,
         ...this.themeClasses,
         ...this.directionClasses,
       },

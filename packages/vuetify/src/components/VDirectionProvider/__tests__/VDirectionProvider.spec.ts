@@ -23,7 +23,9 @@ describe('VDirectionProvider.ts', () => {
   it('should change based upon root $vuetify', () => {
     const wrapper = mountFunction({
       provide: {
-        isRTL: true,
+        direction: {
+          isRtl: true,
+        },
       },
       mocks: {
         $vuetify: {
@@ -32,10 +34,10 @@ describe('VDirectionProvider.ts', () => {
       },
     })
 
-    expect(wrapper.vm.componentIsRTL).toBe(true)
+    expect(wrapper.vm.isRtl).toBe(true)
 
     wrapper.setProps({ root: true })
 
-    expect(wrapper.vm.componentIsRTL).toBe(false)
+    expect(wrapper.vm.isRtl).toBe(false)
   })
 })
