@@ -10,6 +10,7 @@ import Delayable from '../../mixins/delayable'
 import Sizeable from '../../mixins/sizeable'
 import Rippleable from '../../mixins/rippleable'
 import Themeable from '../../mixins/themeable'
+import Directionable from '../../mixins/directionable'
 
 // Utilities
 import { createRange } from '../../util/helpers'
@@ -34,7 +35,8 @@ export default mixins(
   Delayable,
   Rippleable,
   Sizeable,
-  Themeable
+  Themeable,
+  Directionable,
 ).extend({
   name: 'v-rating',
 
@@ -162,7 +164,7 @@ export default mixins(
 
       if (
         this.halfIncrements &&
-        this.$vuetify.rtl
+        this.isRtl
       ) {
         isHalf = !isHalf
       }
@@ -235,6 +237,7 @@ export default mixins(
       class: {
         'v-rating--readonly': this.readonly,
         'v-rating--dense': this.dense,
+        ...this.directionClasses,
       },
     }, children)
   },

@@ -181,12 +181,7 @@ describe('VRating.ts', () => {
 
   it('should check for half event in rtl', () => {
     const wrapper = mountFunction({
-      propsData: { halfIncrements: true },
-      mocks: {
-        $vuetify: {
-          rtl: true,
-        },
-      },
+      propsData: { halfIncrements: true, rtl: true },
     })
 
     const event = new MouseEvent('hover')
