@@ -5,6 +5,7 @@ import './VItemGroup.sass'
 import Groupable from '../../mixins/groupable'
 import Proxyable from '../../mixins/proxyable'
 import Themeable from '../../mixins/themeable'
+import Directionable from '../../mixins/directionable'
 
 // Utilities
 import mixins from '../../util/mixins'
@@ -21,7 +22,8 @@ export type GroupableInstance = InstanceType<typeof Groupable> & {
 
 export const BaseItemGroup = mixins(
   Proxyable,
-  Themeable
+  Themeable,
+  Directionable,
 ).extend({
   name: 'base-item-group',
 
@@ -55,6 +57,7 @@ export const BaseItemGroup = mixins(
       return {
         'v-item-group': true,
         ...this.themeClasses,
+        ...this.directionClasses,
       }
     },
     selectedIndex (): number {

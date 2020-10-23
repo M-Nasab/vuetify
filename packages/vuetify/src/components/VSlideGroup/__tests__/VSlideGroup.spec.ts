@@ -283,10 +283,10 @@ describe('VSlideGroup.ts', () => {
       },
       propsData: {
         showArrows: true,
+        rtl: true,
       },
       mocks: {
         $vuetify: {
-          rtl: true,
           breakpoint: { mobileBreakpoint: 1264 },
         },
       },
@@ -296,7 +296,9 @@ describe('VSlideGroup.ts', () => {
 
     expect(html1).toMatchSnapshot()
 
-    wrapper.vm.$vuetify.rtl = false
+    wrapper.setProps({
+      rtl: false,
+    })
 
     const html2 = wrapper.html()
 
