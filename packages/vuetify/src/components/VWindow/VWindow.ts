@@ -83,7 +83,7 @@ export default BaseItemGroup.extend({
       if (!this.isBooted) return ''
 
       const axis = this.vertical ? 'y' : 'x'
-      const reverse = this.$vuetify.rtl && axis === 'x' ? !this.internalReverse : this.internalReverse
+      const reverse = this.isRtl && axis === 'x' ? !this.internalReverse : this.internalReverse
       const direction = reverse ? '-reverse' : ''
 
       return `v-window-${axis}${direction}-transition`
@@ -164,7 +164,7 @@ export default BaseItemGroup.extend({
     genControlIcons () {
       const icons = []
 
-      const prevIcon = this.$vuetify.rtl
+      const prevIcon = this.isRtl
         ? this.nextIcon
         : this.prevIcon
 
@@ -178,7 +178,7 @@ export default BaseItemGroup.extend({
         icon && icons.push(icon)
       }
 
-      const nextIcon = this.$vuetify.rtl
+      const nextIcon = this.isRtl
         ? this.prevIcon
         : this.nextIcon
 
@@ -211,7 +211,7 @@ export default BaseItemGroup.extend({
       return prevIndex
     },
     next () {
-      this.isReverse = this.$vuetify.rtl
+      this.isReverse = this.isRtl
 
       /* istanbul ignore if */
       if (!this.hasActiveItems || !this.hasNext) return
@@ -222,7 +222,7 @@ export default BaseItemGroup.extend({
       this.internalValue = this.getValue(item, nextIndex)
     },
     prev () {
-      this.isReverse = !this.$vuetify.rtl
+      this.isReverse = !this.isRtl
 
       /* istanbul ignore if */
       if (!this.hasActiveItems || !this.hasPrev) return
@@ -252,10 +252,10 @@ export default BaseItemGroup.extend({
     if (!this.touchless) {
       const value = this.touch || {
         left: () => {
-          this.$vuetify.rtl ? this.prev() : this.next()
+          this.isRtl ? this.prev() : this.next()
         },
         right: () => {
-          this.$vuetify.rtl ? this.next() : this.prev()
+          this.isRtl ? this.next() : this.prev()
         },
         end: (e: TouchEvent) => {
           e.stopPropagation()

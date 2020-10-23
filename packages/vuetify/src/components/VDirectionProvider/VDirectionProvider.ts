@@ -13,7 +13,7 @@ export default Directionable.extend({
   computed: {
     isRtl (): boolean {
       return this.root
-        ? this.rootIsRTL
+        ? this.rootIsRtl
         : Directionable.options.computed.isRtl.call(this)
     },
   },

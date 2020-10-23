@@ -14,6 +14,7 @@ import Returnable from '../../mixins/returnable'
 import Roundable from '../../mixins/roundable'
 import Toggleable from '../../mixins/toggleable'
 import Themeable from '../../mixins/themeable'
+import Directionable from '../../mixins/directionable'
 
 // Directives
 import ClickOutside from '../../directives/click-outside'
@@ -38,7 +39,8 @@ const baseMixins = mixins(
   Returnable,
   Roundable,
   Toggleable,
-  Themeable
+  Themeable,
+  Directionable
 )
 
 /* @vue/component */
@@ -333,6 +335,7 @@ export default baseMixins.extend({
         staticClass: 'v-menu__content',
         class: {
           ...this.rootThemeClasses,
+          ...this.rootDirectionClasses,
           ...this.roundedClasses,
           'v-menu__content--auto': this.auto,
           'v-menu__content--fixed': this.activatorFixed,

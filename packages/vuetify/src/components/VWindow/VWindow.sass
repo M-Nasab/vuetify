@@ -1,5 +1,19 @@
 @import './_variables.scss'
 
++direction(v-window) using ($direction, $start, $end)
+  .v-window__prev
+    #{$start}: 0
+
+  .v-window__next
+    #{$end}: 0
+
+  &--show-arrows-on-hover
+    .v-window__prev
+      transform: if($direction == ltr, translateX(-200%), translateX(200%))
+
+    .v-window__next
+      transform: if($direction == ltr, translateX(200%), translateX(-200%))
+
 .v-window
   &__container
     height: inherit
@@ -21,40 +35,12 @@
     .v-btn:hover
       background: none
 
-  &__prev
-    +ltr()
-      left: 0
-
-    +rtl()
-      right: 0
-
-  &__next
-    +ltr()
-      right: 0
-
-    +rtl()
-      left: 0
-
   &--show-arrows-on-hover
     overflow: hidden
 
     .v-window__next,
     .v-window__prev
       transition: .2s transform map-get($transition, 'swing')
-
-    .v-window__prev
-      +ltr()
-        transform: translateX(-200%)
-
-      +rtl()
-        transform: translateX(200%)
-
-    .v-window__next
-      +ltr()
-        transform: translateX(200%)
-
-      +rtl()
-        transform: translateX(-200%)
 
     &:hover
       .v-window__next,

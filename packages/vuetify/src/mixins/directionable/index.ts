@@ -67,7 +67,7 @@ const Directionable = Vue.extend<options>().extend({
       }
     },
     /** Used by menus and dialogs, inherits from v-app instead of the parent */
-    rootIsRTL (): boolean {
+    rootIsRtl (): boolean {
       if (this.rtl === true) {
         // explicitly rtl
         return true
@@ -81,8 +81,8 @@ const Directionable = Vue.extend<options>().extend({
     },
     rootDirectionClasses (): Dictionary<boolean> {
       return {
-        'direction--rtl': this.rootIsRTL,
-        'direction--ltr': !this.rootIsRTL,
+        'direction--rtl': this.rootIsRtl,
+        'direction--ltr': !this.rootIsRtl,
       }
     },
   },

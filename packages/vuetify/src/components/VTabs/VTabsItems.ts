@@ -25,6 +25,9 @@ export default VWindow.extend({
     isDark (): boolean {
       return this.rootIsDark
     },
+    isRtl (): boolean {
+      return this.rootIsRtl
+    },
   },
 
   methods: {
