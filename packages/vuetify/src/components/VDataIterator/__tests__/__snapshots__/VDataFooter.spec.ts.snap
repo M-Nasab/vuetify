@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`VDataFooter.ts should disable last page button if no items 1`] = `
-<div class="v-data-footer">
+<div class="v-data-footer direction--ltr">
   <div class="v-data-footer__select">
     Items per page:
     <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -102,7 +102,7 @@ exports[`VDataFooter.ts should disable last page button if no items 1`] = `
 `;
 
 exports[`VDataFooter.ts should render first & last icons with showFirstLastPage 1`] = `
-<div class="v-data-footer">
+<div class="v-data-footer direction--ltr">
   <div class="v-data-footer__select">
     Items per page:
     <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -199,7 +199,7 @@ exports[`VDataFooter.ts should render first & last icons with showFirstLastPage 
 `;
 
 exports[`VDataFooter.ts should render in RTL mode 1`] = `
-<div class="v-data-footer">
+<div class="v-data-footer direction--ltr">
   <div class="v-data-footer__select">
     Items per page:
     <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -251,7 +251,7 @@ exports[`VDataFooter.ts should render in RTL mode 1`] = `
     >
       <span class="v-btn__content">
         <i aria-hidden="true"
-           class="v-icon notranslate mdi mdi-page-last theme--light"
+           class="v-icon notranslate mdi mdi-page-first theme--light"
         >
         </i>
       </span>
@@ -262,7 +262,7 @@ exports[`VDataFooter.ts should render in RTL mode 1`] = `
     >
       <span class="v-btn__content">
         <i aria-hidden="true"
-           class="v-icon notranslate mdi mdi-chevron-right theme--light"
+           class="v-icon notranslate mdi mdi-chevron-left theme--light"
         >
         </i>
       </span>
@@ -275,7 +275,7 @@ exports[`VDataFooter.ts should render in RTL mode 1`] = `
     >
       <span class="v-btn__content">
         <i aria-hidden="true"
-           class="v-icon notranslate mdi mdi-chevron-left theme--light"
+           class="v-icon notranslate mdi mdi-chevron-right theme--light"
         >
         </i>
       </span>
@@ -286,7 +286,7 @@ exports[`VDataFooter.ts should render in RTL mode 1`] = `
     >
       <span class="v-btn__content">
         <i aria-hidden="true"
-           class="v-icon notranslate mdi mdi-page-first theme--light"
+           class="v-icon notranslate mdi mdi-page-last theme--light"
         >
         </i>
       </span>
@@ -296,7 +296,7 @@ exports[`VDataFooter.ts should render in RTL mode 1`] = `
 `;
 
 exports[`VDataFooter.ts should render with custom itemsPerPage 1`] = `
-<div class="v-data-footer">
+<div class="v-data-footer direction--ltr">
   <div class="v-data-footer__select">
     Items per page:
     <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -372,7 +372,7 @@ exports[`VDataFooter.ts should render with custom itemsPerPage 1`] = `
 `;
 
 exports[`VDataFooter.ts should show current page if has showCurrentPage 1`] = `
-<div class="v-data-footer">
+<div class="v-data-footer direction--ltr">
   <div class="v-data-footer__select">
     Items per page:
     <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
