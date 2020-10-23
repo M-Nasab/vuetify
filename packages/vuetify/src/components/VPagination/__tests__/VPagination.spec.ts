@@ -72,11 +72,10 @@ describe('VPagination.ts', () => {
         value: 2,
       },
     })
-    wrapper.vm.$vuetify.rtl = true
+    wrapper.setProps({ rtl: true })
     await wrapper.vm.$nextTick()
 
     expect(wrapper.html()).toMatchSnapshot()
-    wrapper.vm.$vuetify.rtl = undefined
   })
 
   it('emits an event when pagination item is clicked', async () => {

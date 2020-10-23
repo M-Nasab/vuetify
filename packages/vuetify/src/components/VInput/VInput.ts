@@ -78,6 +78,7 @@ export default baseMixins.extend<options>().extend({
         'v-input--is-readonly': this.isReadonly,
         'v-input--dense': this.dense,
         ...this.themeClasses,
+        ...this.directionClasses,
       }
     },
     computedId (): string {

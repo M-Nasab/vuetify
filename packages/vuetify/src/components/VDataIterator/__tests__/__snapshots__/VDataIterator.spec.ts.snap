@@ -16,7 +16,7 @@ exports[`VDataIterator.ts should render and match snapshot 1`] = `
   <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Items per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -107,7 +107,7 @@ exports[`VDataIterator.ts should render and match snapshot with data 1`] = `
   <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Items per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -189,7 +189,7 @@ exports[`VDataIterator.ts should render valid no-data, loading and no-results st
   <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Items per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -271,7 +271,7 @@ exports[`VDataIterator.ts should render valid no-data, loading and no-results st
   <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Items per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"
@@ -353,7 +353,7 @@ exports[`VDataIterator.ts should render valid no-data, loading and no-results st
   <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Items per page:
-      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
+      <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light direction--ltr v-text-field v-select">
         <div class="v-input__control">
           <div role="button"
                aria-haspopup="listbox"

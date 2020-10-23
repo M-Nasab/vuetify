@@ -35,7 +35,7 @@ export default mixins<options &
 /* eslint-enable indent */
 >(
   VInput,
-  Loadable
+  Loadable,
 /* @vue/component */
 ).extend({
   name: 'v-slider',
@@ -146,8 +146,8 @@ export default mixins<options &
       const endDir = this.vertical ? 'top' : 'right'
       const valueDir = this.vertical ? 'height' : 'width'
 
-      const start = this.$vuetify.rtl ? 'auto' : '0'
-      const end = this.$vuetify.rtl ? '0' : 'auto'
+      const start = this.isRtl ? 'auto' : '0'
+      const end = this.isRtl ? '0' : 'auto'
       const value = this.isDisabled ? `calc(${this.inputWidth}% - 10px)` : `${this.inputWidth}%`
 
       return {
@@ -158,7 +158,7 @@ export default mixins<options &
       }
     },
     trackStyles (): Partial<CSSStyleDeclaration> {
-      const startDir = this.vertical ? this.$vuetify.rtl ? 'bottom' : 'top' : this.$vuetify.rtl ? 'left' : 'right'
+      const startDir = this.vertical ? this.isRtl ? 'bottom' : 'top' : this.isRtl ? 'left' : 'right'
       const endDir = this.vertical ? 'height' : 'width'
 
       const start = '0px'
@@ -252,6 +252,7 @@ export default mixins<options &
           'v-slider--disabled': this.isDisabled,
           'v-slider--readonly': this.isReadonly,
           ...this.themeClasses,
+          ...this.directionClasses,
         },
         directives: [{
           name: 'click-outside',
@@ -313,8 +314,8 @@ export default mixins<options &
 
       const tickSize = parseFloat(this.tickSize)
       const range = createRange(this.numTicks + 1)
-      const direction = this.vertical ? 'bottom' : (this.$vuetify.rtl ? 'right' : 'left')
-      const offsetDirection = this.vertical ? (this.$vuetify.rtl ? 'left' : 'right') : 'top'
+      const direction = this.vertical ? 'bottom' : (this.isRtl ? 'right' : 'left')
+      const offsetDirection = this.vertical ? (this.isRtl ? 'left' : 'right') : 'top'
 
       if (this.vertical) range.reverse()
 
@@ -328,7 +329,7 @@ export default mixins<options &
         }
 
         const width = index * (100 / this.numTicks)
-        const filled = this.$vuetify.rtl ? (100 - this.inputWidth) < width : width < this.inputWidth
+        const filled = this.isRtl ? (100 - this.inputWidth) < width : width < this.inputWidth
 
         return this.$createElement('span', {
           key: index,
@@ -438,7 +439,7 @@ export default mixins<options &
     },
     getThumbContainerStyles (width: number): object {
       const direction = this.vertical ? 'top' : 'left'
-      let value = this.$vuetify.rtl ? 100 - width : width
+      let value = this.isRtl ? 100 - width : width
       value = this.vertical ? 100 - value : value
 
       return {
@@ -538,7 +539,7 @@ export default mixins<options &
       let clickPos = Math.min(Math.max((clickOffset - trackStart) / trackLength, 0), 1) || 0
 
       if (this.vertical) clickPos = 1 - clickPos
-      if (this.$vuetify.rtl) clickPos = 1 - clickPos
+      if (this.isRtl) clickPos = 1 - clickPos
 
       const isInsideTrack = clickOffset >= trackStart && clickOffset <= trackStart + trackLength
       const value = parseFloat(this.min) + clickPos * (this.maxValue - this.minValue)
@@ -558,7 +559,7 @@ export default mixins<options &
       if ([left, right, down, up].includes(e.keyCode)) {
         this.keyPressed += 1
 
-        const increase = this.$vuetify.rtl ? [left, up] : [right, up]
+        const increase = this.isRtl ? [left, up] : [right, up]
         const direction = increase.includes(e.keyCode) ? 1 : -1
         const multiplier = e.shiftKey ? 3 : (e.ctrlKey ? 2 : 1)
 

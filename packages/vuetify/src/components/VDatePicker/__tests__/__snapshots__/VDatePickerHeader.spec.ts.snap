@@ -33,13 +33,13 @@ exports[`VDatePickerHeader.ts should render component and match snapshot 1`] = `
 `;
 
 exports[`VDatePickerHeader.ts should render component in RTL mode and match snapshot 1`] = `
-<div class="v-date-picker-header theme--light direction--ltr">
+<div class="v-date-picker-header theme--light direction--rtl">
   <button type="button"
           class="v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--default"
   >
     <span class="v-btn__content">
       <i aria-hidden="true"
-         class="v-icon notranslate mdi mdi-chevron-left theme--light"
+         class="v-icon notranslate mdi mdi-chevron-right theme--light"
       >
       </i>
     </span>
@@ -56,7 +56,7 @@ exports[`VDatePickerHeader.ts should render component in RTL mode and match snap
   >
     <span class="v-btn__content">
       <i aria-hidden="true"
-         class="v-icon notranslate mdi mdi-chevron-right theme--light"
+         class="v-icon notranslate mdi mdi-chevron-left theme--light"
       >
       </i>
     </span>
