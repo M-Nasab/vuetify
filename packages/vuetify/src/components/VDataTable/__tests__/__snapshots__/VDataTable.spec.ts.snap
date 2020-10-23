@@ -313,7 +313,7 @@ exports[`VDataTable.ts should apply class from item to rows 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -705,7 +705,7 @@ exports[`VDataTable.ts should apply class function to rows 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -1097,7 +1097,7 @@ exports[`VDataTable.ts should apply class list to rows 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -1489,7 +1489,7 @@ exports[`VDataTable.ts should apply class unique to rows 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -1731,7 +1731,7 @@ exports[`VDataTable.ts should change page if item count decreases below page sta
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__pagination">
       3-4 of 4
     </div>
@@ -2131,7 +2131,7 @@ exports[`VDataTable.ts should default to first option in itemsPerPageOptions if 
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -2773,7 +2773,7 @@ exports[`VDataTable.ts should handle object when checking if it should default t
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -3416,7 +3416,7 @@ exports[`VDataTable.ts should hide group button when column is not groupable 1`]
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -3809,7 +3809,7 @@ exports[`VDataTable.ts should limit page to current page count if not using serv
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -3956,7 +3956,7 @@ exports[`VDataTable.ts should not limit page to current item count when using se
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -4348,7 +4348,7 @@ exports[`VDataTable.ts should not limit page to current item count when using se
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -4989,7 +4989,7 @@ exports[`VDataTable.ts should not search column with filterable set to false 1`]
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -5137,7 +5137,7 @@ exports[`VDataTable.ts should not search column with filterable set to false 2`]
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -5430,7 +5430,7 @@ exports[`VDataTable.ts should not search column with filterable set to false and
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -6073,7 +6073,7 @@ exports[`VDataTable.ts should not search column with filterable set to false and
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -6358,7 +6358,7 @@ exports[`VDataTable.ts should not select item that is not selectable 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -6461,7 +6461,7 @@ exports[`VDataTable.ts should pass kebab-case footer props correctly 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Foo:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -6564,7 +6564,7 @@ exports[`VDataTable.ts should render 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -6664,7 +6664,7 @@ exports[`VDataTable.ts should render footer.page-text slot content 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -6868,7 +6868,7 @@ exports[`VDataTable.ts should render item slot when using group-by function 1`] 
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -6996,7 +6996,7 @@ exports[`VDataTable.ts should render loading state 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -7153,7 +7153,7 @@ exports[`VDataTable.ts should render loading state 2`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -7297,7 +7297,7 @@ exports[`VDataTable.ts should render with body slot 1`] = `
       </div>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -7689,7 +7689,7 @@ exports[`VDataTable.ts should render with data 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -7842,7 +7842,7 @@ exports[`VDataTable.ts should render with group scoped slot 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -8353,7 +8353,7 @@ exports[`VDataTable.ts should render with group.summary scoped slot 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -8812,7 +8812,7 @@ exports[`VDataTable.ts should render with grouped rows 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -8969,7 +8969,7 @@ exports[`VDataTable.ts should render with item scoped slot 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -9386,7 +9386,7 @@ exports[`VDataTable.ts should render with item.expanded scoped slot 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -9834,7 +9834,7 @@ exports[`VDataTable.ts should render with showExpand 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -10282,7 +10282,7 @@ exports[`VDataTable.ts should render with showExpand 2`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -10763,7 +10763,7 @@ exports[`VDataTable.ts should render with showSelect 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -11000,7 +11000,7 @@ exports[`VDataTable.ts should respect mustSort property on options 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -11212,7 +11212,7 @@ exports[`VDataTable.ts should search group-by column 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -11387,7 +11387,7 @@ exports[`VDataTable.ts should search group-by column 2`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -11795,7 +11795,7 @@ exports[`VDataTable.ts should show correct aria-labels when sorting 1`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -12203,7 +12203,7 @@ exports[`VDataTable.ts should show correct aria-labels when sorting 2`] = `
       </tbody>
     </table>
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Rows per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">

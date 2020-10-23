@@ -5,12 +5,20 @@ import VSelect from '../VSelect/VSelect'
 import VIcon from '../VIcon'
 import VBtn from '../VBtn'
 
+// Mixins
+import Directionable from '../../mixins/directionable'
+
+// Utilities
+import mixins from '../../util/mixins'
+
 // Types
-import Vue, { VNode, VNodeChildrenArrayContents, PropType } from 'vue'
+import { VNode, VNodeChildrenArrayContents, PropType } from 'vue'
 import { DataPagination, DataOptions, DataItemsPerPageOption } from 'vuetify/types'
 import { PropValidator } from 'vue/types/options'
 
-export default Vue.extend({
+export default mixins(
+  Directionable,
+).extend({
   name: 'v-data-footer',
 
   props: {
@@ -173,14 +181,14 @@ export default Vue.extend({
         this.onPreviousPage,
         this.options.page === 1,
         this.$vuetify.lang.t('$vuetify.dataFooter.prevPage'),
-        this.$vuetify.rtl ? this.nextIcon : this.prevIcon
+        this.isRtl ? this.nextIcon : this.prevIcon
       ))
 
       after.push(this.genIcon(
         this.onNextPage,
         this.disableNextPageIcon,
         this.$vuetify.lang.t('$vuetify.dataFooter.nextPage'),
-        this.$vuetify.rtl ? this.prevIcon : this.nextIcon
+        this.isRtl ? this.prevIcon : this.nextIcon
       ))
 
       if (this.showFirstLastPage) {
@@ -188,14 +196,14 @@ export default Vue.extend({
           this.onFirstPage,
           this.options.page === 1,
           this.$vuetify.lang.t('$vuetify.dataFooter.firstPage'),
-          this.$vuetify.rtl ? this.lastIcon : this.firstIcon
+          this.isRtl ? this.lastIcon : this.firstIcon
         ))
 
         after.push(this.genIcon(
           this.onLastPage,
           this.options.page >= this.pagination.pageCount || this.options.itemsPerPage === -1,
           this.$vuetify.lang.t('$vuetify.dataFooter.lastPage'),
-          this.$vuetify.rtl ? this.firstIcon : this.lastIcon
+          this.isRtl ? this.firstIcon : this.lastIcon
         ))
       }
 
@@ -214,6 +222,9 @@ export default Vue.extend({
   render (): VNode {
     return this.$createElement('div', {
       staticClass: 'v-data-footer',
+      class: {
+        ...this.directionClasses,
+      },
     }, [
       this.genItemsPerPageSelect(),
       this.genPaginationInfo(),

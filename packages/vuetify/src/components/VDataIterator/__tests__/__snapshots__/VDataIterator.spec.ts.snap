@@ -13,7 +13,7 @@ exports[`VDataIterator.ts should render and match snapshot 1`] = `
   <div>
     No data available
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Items per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -104,7 +104,7 @@ exports[`VDataIterator.ts should render and match snapshot with data 1`] = `
   <div>
     qux
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Items per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -186,7 +186,7 @@ exports[`VDataIterator.ts should render valid no-data, loading and no-results st
   <div>
     No data available
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Items per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -268,7 +268,7 @@ exports[`VDataIterator.ts should render valid no-data, loading and no-results st
   <div>
     Loading items...
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Items per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
@@ -350,7 +350,7 @@ exports[`VDataIterator.ts should render valid no-data, loading and no-results st
   <div>
     No matching records found
   </div>
-  <div class="v-data-footer">
+  <div class="v-data-footer direction--ltr">
     <div class="v-data-footer__select">
       Items per page:
       <div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field direction--ltr v-select">
