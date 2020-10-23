@@ -9,6 +9,7 @@ import Resize from '../../directives/resize'
 import Colorable from '../../mixins/colorable'
 import Intersectable from '../../mixins/intersectable'
 import Themeable from '../../mixins/themeable'
+import Directionable from '../../mixins/directionable'
 
 // Utilities
 import mixins from '../../util/mixins'
@@ -20,7 +21,8 @@ import { VNode, CreateElement, VNodeChildrenArrayContents } from 'vue'
 export default mixins(
   Colorable,
   Intersectable({ onVisible: ['init'] }),
-  Themeable
+  Themeable,
+  Directionable,
 ).extend({
   name: 'v-pagination',
 
@@ -83,6 +85,7 @@ export default mixins(
         'v-pagination--circle': this.circle,
         'v-pagination--disabled': this.disabled,
         ...this.themeClasses,
+        ...this.directionClasses,
       }
     },
 
@@ -227,13 +230,13 @@ export default mixins(
   render (h): VNode {
     const children = [
       this.genIcon(h,
-        this.$vuetify.rtl ? this.nextIcon : this.prevIcon,
+        this.isRtl ? this.nextIcon : this.prevIcon,
         this.value <= 1,
         this.previous,
         this.$vuetify.lang.t(this.previousAriaLabel)),
       this.genItems(h),
       this.genIcon(h,
-        this.$vuetify.rtl ? this.prevIcon : this.nextIcon,
+        this.isRtl ? this.prevIcon : this.nextIcon,
         this.value >= this.length,
         this.next,
         this.$vuetify.lang.t(this.nextAriaLabel)),
