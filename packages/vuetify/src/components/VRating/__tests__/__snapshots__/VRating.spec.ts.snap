@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`VRating.ts should render a scoped slot 1`] = `
-<div class="v-rating">
+<div class="v-rating direction--ltr">
   <span>
     foobar
   </span>
