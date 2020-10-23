@@ -12,6 +12,7 @@ import VLabel from '../VLabel'
 import Intersectable from '../../mixins/intersectable'
 import Loadable from '../../mixins/loadable'
 import Validatable from '../../mixins/validatable'
+import Directionable from '../../mixins/directionable'
 
 // Directives
 import resize from '../../directives/resize'
@@ -34,6 +35,7 @@ const baseMixins = mixins(
     ],
   }),
   Loadable,
+  Directionable,
 )
 interface options extends InstanceType<typeof baseMixins> {
   $refs: {
@@ -118,6 +120,7 @@ export default baseMixins.extend<options>().extend({
         'v-text-field--placeholder': this.placeholder,
         'v-text-field--rounded': this.rounded,
         'v-text-field--shaped': this.shaped,
+        ...this.directionClasses,
       }
     },
     computedColor (): string | undefined {
@@ -178,7 +181,7 @@ export default baseMixins.extend<options>().extend({
 
       if (this.labelValue && this.prependWidth) offset -= this.prependWidth
 
-      return (this.$vuetify.rtl === this.reverse) ? {
+      return (this.componentIsRTL === this.reverse) ? {
         left: offset,
         right: 'auto',
       } : {
